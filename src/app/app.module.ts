@@ -10,6 +10,8 @@ import { LoaderComponent } from './loader/loader.component';
 import { AboutInfoComponent } from './about-info/about-info.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { AboutServiceComponent } from './about-service/about-service.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { AboutServiceComponent } from './about-service/about-service.component';
     AboutInfoComponent,
     CategoriesComponent,
     AboutServiceComponent,
+    HeaderComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
