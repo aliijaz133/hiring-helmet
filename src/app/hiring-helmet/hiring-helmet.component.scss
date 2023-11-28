@@ -28,12 +28,13 @@
   max-width: 300px;
   padding: 0 1rem;
   font-size: 15px;
-  border-radius: 6px 0 0 6px;
-  background-color: transparent;
+  background-color: #fff;
+  border: none;
+  width: -webkit-fill-available;
 }
 
 .input:focus {
-  outline: onlint;
+  outline: none;
 }
 
 .button--submit {
