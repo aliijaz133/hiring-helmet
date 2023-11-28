@@ -1,0 +1,94 @@
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.find-brand {
+  display: flex;
+  justify-content: center;
+}
+
+mat-form-field {
+    width: 400px;
+}
+
+.find-btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-weight: 500;
+}
+
+.brand-btn {
+  background-color: #ff9000;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-weight: 500;
+}
+
+.social-app {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.or-container {
+  display: flex;
+}
+
+.name-email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.name-email__container,
+.password-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.cont {
+  display: flex;
+  align-items: center;
+  transform: scale(1);
+}
+
+.signup-btn {
+    background-color: #ff9000;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border: none;
+    padding: 5px 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 400px;
+    border-radius: 0px !important;
+}
+
+.mat-mdc-radio-button.mat-accent {
+  --mdc-radio-disabled-selected-icon-color: #000000;
+  --mdc-radio-disabled-unselected-icon-color: #000000;
+  --mdc-radio-unselected-hover-icon-color: #000000;
+  --mdc-radio-unselected-icon-color: rgba(0, 0, 0, 0.54);
+  --mdc-radio-unselected-pressed-icon-color: #0000008a;
+  --mdc-radio-selected-focus-icon-color: #408cff;
+  --mdc-radio-selected-hover-icon-color: #408cff;
+  --mdc-radio-selected-icon-color: #408cff;
+  --mdc-radio-selected-pressed-icon-color: #408cff;
+  --mat-radio-ripple-color: #000000;
+  --mat-radio-checked-ripple-color: #408cff;
+  --mat-radio-disabled-label-color: rgba(0, 0, 0, 0.38);
+}
+

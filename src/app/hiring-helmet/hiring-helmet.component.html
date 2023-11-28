@@ -1,2 +1,44 @@
 <app-header></app-header>
-<app-footer></app-footer>
+<div class="bg-image">
+  <div class="main-container">
+    <h1
+      class="h1-online-eng__title"
+      style="font-family: Playfair Display; font-size: 4rem; line-height: 70px;width: min-content;"
+    >
+      Online Engineering Marketplace
+    </h1>
+    <div class="input-group">
+      <input
+        type="email"
+        class="input"
+        id="Email"
+        name="Email"
+        placeholder="Find Service"
+        autocomplete="off"
+      />
+      <input class="button--submit" value="Search" type="submit" />
+    </div>
+    <div class="mat-chip__container">
+      <mat-chip-list #chipGrid class="mat-chip">
+        <mat-chip *ngFor="let fruit of fruits" (removed)="remove(fruit)">
+          {{ fruit.name }}
+          <mat-icon matChipRemove>cancel</mat-icon>
+        </mat-chip>
+        <input
+          matChipInput
+          [matChipInputFor]="chipGrid"
+          (matChipInputTokenEnd)="add($event)"
+          placeholder="Enter New Service"
+          *ngIf="inputVisible"
+          #serviceInput
+        />
+        <mat-icon *ngIf="!inputVisible" (click)="showInput()"
+          >add_circle</mat-icon
+        >
+
+        <!-- Cross icon when input is visible -->
+        <mat-icon *ngIf="inputVisible" (click)="hideInput()">cancel</mat-icon>
+      </mat-chip-list>
+    </div>
+  </div>
+</div>
