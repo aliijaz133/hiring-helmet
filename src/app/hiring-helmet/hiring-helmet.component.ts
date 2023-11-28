@@ -2,6 +2,7 @@ import { COMMA, ENTER } from '@angular/cdk/keycodes';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { MatChipInputEvent } from '@angular/material/chips';
 import { LiveAnnouncer } from '@angular/cdk/a11y';
+
 export interface Fruit {
   name: string;
 }
@@ -24,13 +25,12 @@ export class HiringHelmetComponent implements OnInit {
     this.inputVisible = false;
   }
   readonly separatorKeysCodes: number[] = [ENTER, COMMA];
+
   fruits: Fruit[] = [
     { name: 'Interior' },
     { name: 'Engineering' },
     { name: '3D Max' },
-    {
-      name: 'Blender',
-    },
+    { name: 'Blender' },
   ];
 
   constructor(private announcer: LiveAnnouncer, private el: ElementRef) {}
@@ -43,7 +43,6 @@ export class HiringHelmetComponent implements OnInit {
     // Add our fruit
     if (value) {
       this.fruits.push({ name: value });
-      
     }
 
     // Clear the input value
@@ -79,5 +78,4 @@ export class HiringHelmetComponent implements OnInit {
       this.fruits[index].name = value;
     }
   }
-
 }
