@@ -15,6 +15,8 @@ export interface Fruit {
 export class HiringHelmetComponent implements OnInit {
   addOnBlur = true;
 
+  showLoader = false;
+
   inputVisible: boolean = false;
 
   showInput() {
@@ -35,7 +37,13 @@ export class HiringHelmetComponent implements OnInit {
 
   constructor(private announcer: LiveAnnouncer, private el: ElementRef) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.showLoader = true;
+
+    setTimeout(() => {
+      this.showLoader = false;
+    }, 2000);
+  }
 
   add(event: MatChipInputEvent): void {
     const value = (event.value || '').trim();
