@@ -39,8 +39,6 @@
         <mat-icon *ngIf="!inputVisible" (click)="showInput()"
           >add_circle</mat-icon
         >
-
-        <!-- Cross icon when input is visible -->
         <mat-icon *ngIf="inputVisible" (click)="hideInput()">cancel</mat-icon>
       </mat-chip-list>
     </div>
@@ -87,88 +85,7 @@
       </ul>
     </div>
     <div class="images-container">
-      <div>
-        <div class="image-container">
-          <img
-            src=".././../assets/image/image 8.png"
-            alt="Image"
-            class="image-setting"
-          />
-          <div class="image-overlay">
-            <div class="image-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-              temporibus voluptates sed recusandae.
-            </div>
-          </div>
-        </div>
-        <div class="image-container">
-          <img
-            src=".././../assets/image/image 8.png"
-            alt="Image"
-            class="image-setting"
-          />
-          <div class="image-overlay">
-            <div class="image-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-              temporibus voluptates sed recusandae.
-            </div>
-          </div>
-        </div>
-        <div class="image-container">
-          <img
-            src=".././../assets/image/image 7.png"
-            alt="Image"
-            class="image-setting"
-          />
-          <div class="image-overlay">
-            <div class="image-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-              temporibus voluptates sed recusandae.
-            </div>
-          </div>
-        </div>
-        <div class="image-container">
-          <img
-            src=".././../assets/image/image 6.png"
-            alt="Image"
-            class="image-setting"
-          />
-          <div class="image-overlay">
-            <div class="image-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-              temporibus voluptates sed recusandae.
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="image-container">
-          <img
-            src=".././../assets/image/image 8.png"
-            alt="Image"
-            class="image-setting"
-          />
-          <div class="image-overlay">
-            <div class="image-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-              temporibus voluptates sed recusandae.
-            </div>
-          </div>
-        </div>
-        <div class="image-container">
-          <img
-            src=".././../assets/image/image 8.png"
-            alt="Image"
-            class="image-setting"
-          />
-          <div class="image-overlay">
-            <div class="image-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-              temporibus voluptates sed recusandae.
-            </div>
-          </div>
-        </div>
-      </div>
+      <app-image-group></app-image-group>
       <button class="brand-btn" style="width: fit-content !important">
         More
       </button>
@@ -202,6 +119,10 @@
           >ullamcorper condimentum</span
         >
         ut suspendisse viverra ornare sit venenatis
+      </p>
+      <p style="width: 300px; margin-left: 200px;color: gray;font-family: 'Times New Roman', Times, serif;font-size: 1.2rem;" class="about-desc">
+        Amet eu facilisi posuere ut at cras non ipsum proin nunc purus tellus
+        ultricies velit
       </p>
       <br />
       <button class="brand-btn">Read More</button>
@@ -338,5 +259,7 @@
     </div>
   </div>
 </article>
+<app-why-us></app-why-us>
 <app-footer></app-footer>
 <loader *ngIf="showLoader"></loader>
+

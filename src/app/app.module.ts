@@ -22,6 +22,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
 import { MatChipsModule } from '@angular/material/chips';
+import { WhyUsComponent } from './why-us/why-us.component';
+import { ImageGroupComponent } from './image-group/image-group.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,8 @@ import { MatChipsModule } from '@angular/material/chips';
     AboutServiceComponent,
     HeaderComponent,
     FooterComponent,
+    WhyUsComponent,
+    ImageGroupComponent,
   ],
   imports: [
     BrowserModule,

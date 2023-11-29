@@ -1,5 +1,6 @@
 .bg-image {
-  background-image: url(".././../assets/image/image\ 20\ \(1\).png");
+  // background-image: url("../../assets/image/Rectangle\ 376.png");
+  background-color: #c4c4c4;
   height: 50vh;
   width: 100%;
   background-size: cover;
@@ -56,10 +57,11 @@
 .find-container {
   display: flex;
   justify-content: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 50px;
   gap: 40px;
 }
 
@@ -153,8 +155,6 @@
   flex-direction: column;
   align-items: center;
   flex-wrap: nowrap;
-  margin-top: 30px;
-  margin-bottom: 50px;
 }
 
 section {
@@ -186,7 +186,6 @@ h5 {
 .images-container {
   display: flex;
   flex-direction: column;
-  width: min-content;
 }
 
 article {
@@ -213,6 +212,10 @@ article {
   flex-basis: 200;
   flex-grow: 1;
   background-color: #c4c4c4;
+}
+
+app-why-us {
+  margin-bottom: 50px;
 }
 
 @media (max-width: 660px) {
@@ -354,5 +357,11 @@ article {
 @media (max-width: 480px) {
   .image-grid {
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+}
+
+@media (min-width:550px) {
+  .input {
+    max-width: 400px !important;
   }
 }
