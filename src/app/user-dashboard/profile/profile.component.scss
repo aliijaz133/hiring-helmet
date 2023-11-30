@@ -12,6 +12,8 @@ main {
 
 app-sidebar {
   width: 200px;
+  height: auto;
+  background-color: orange;
 }
 
 .profile-container {
@@ -63,13 +65,12 @@ h4 {
   color: white;
   font-size: 28px;
   font-weight: 400;
-      margin-bottom: 0px !important;
+  margin-bottom: 0px !important;
 }
 
 .massege-container {
   display: grid;
   grid-template-columns: 260px auto;
-
 }
 
 .name-container {
@@ -129,38 +130,37 @@ input:hover {
 }
 
 .name-last_text {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 h5 {
-    font-family: 'Open Sans';
-    font-size: 16px;
-    font-weight: 600;
-    color: #011627;
-
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 600;
+  color: #011627;
 }
 
 .last-text {
-    font-size: 14px !important;
-    font-weight: 400;
-    font-family: 'Inter';
-    color: #707991;
+  font-size: 14px !important;
+  font-weight: 400;
+  font-family: "Inter";
+  color: #707991;
 }
 
 .text-massage__container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .avatar-time {
-    display: flex;
-    justify-content: space-between;
-    background-color: #fff;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  align-items: center;
 }
 
 .icons-container {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
