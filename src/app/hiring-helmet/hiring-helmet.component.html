@@ -70,7 +70,7 @@
   <div class="picture-side_bar">
     <div class="side-bar">
       <ul>
-        <li class="categ-link">&nbsp;&nbsp;All Categories</li>
+        <li class="categ-link" (click)="categories()">&nbsp;&nbsp;All Categories</li>
         <li class="categ-link">&nbsp;&nbsp;Solution Architecture Design</li>
         <li class="categ-link">&nbsp;&nbsp;AWS Arch slide</li>
         <li class="categ-link">&nbsp;&nbsp;Autodesk 3ds Max</li>
@@ -120,7 +120,16 @@
         >
         ut suspendisse viverra ornare sit venenatis
       </p>
-      <p style="width: 300px; margin-left: 200px;color: gray;font-family: 'Times New Roman', Times, serif;font-size: 1.2rem;" class="about-desc">
+      <p
+        style="
+          width: 300px;
+          margin-left: 200px;
+          color: gray;
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 1.2rem;
+        "
+        class="about-desc"
+      >
         Amet eu facilisi posuere ut at cras non ipsum proin nunc purus tellus
         ultricies velit
       </p>
@@ -262,4 +271,3 @@
 <app-why-us></app-why-us>
 <app-footer></app-footer>
 <loader *ngIf="showLoader"></loader>
-

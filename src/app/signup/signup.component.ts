@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signup',
@@ -8,14 +9,17 @@ import { Component, OnInit } from '@angular/core';
 export class SignupComponent implements OnInit {
   showLoader = false;
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
-
     this.showLoader = true;
 
-    setTimeout(()=> {
+    setTimeout(() => {
       this.showLoader = false;
-    },2000);
+    }, 2000);
+  }
+
+  loginPage() {
+    this.router.navigate(['/login']);
   }
 }

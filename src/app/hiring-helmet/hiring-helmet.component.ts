@@ -2,6 +2,8 @@ import { COMMA, ENTER } from '@angular/cdk/keycodes';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { MatChipInputEvent } from '@angular/material/chips';
 import { LiveAnnouncer } from '@angular/cdk/a11y';
+import { Router } from '@angular/router';
+
 
 export interface Fruit {
   name: string;
@@ -35,7 +37,11 @@ export class HiringHelmetComponent implements OnInit {
     { name: 'Blender' },
   ];
 
-  constructor(private announcer: LiveAnnouncer, private el: ElementRef) {}
+  constructor(
+    private announcer: LiveAnnouncer,
+    private el: ElementRef,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
     this.showLoader = true;
@@ -85,5 +91,9 @@ export class HiringHelmetComponent implements OnInit {
     if (index >= 0) {
       this.fruits[index].name = value;
     }
+  }
+
+  categories() {
+    this.router.navigate(['/all-categories']);
   }
 }

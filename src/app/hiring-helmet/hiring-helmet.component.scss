@@ -1,6 +1,6 @@
 .bg-image {
-  // background-image: url("../../assets/image/Rectangle\ 376.png");
-  background-color: #c4c4c4;
+  background-image: url("../../assets/image/image 20.png") !important;
+  // background-color: #c4c4c4;
   height: 50vh;
   width: 100%;
   background-size: cover;
@@ -224,6 +224,12 @@ app-why-us {
     top: 10%;
     left: 2%;
   }
+
+  app-why-us {
+  position: relative;
+  top: 50px;
+  margin-bottom: 50px;
+}
 }
 
 @media (max-width: 550px) {

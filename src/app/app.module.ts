@@ -24,6 +24,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatChipsModule } from '@angular/material/chips';
 import { WhyUsComponent } from './why-us/why-us.component';
 import { ImageGroupComponent } from './image-group/image-group.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { ImageGroupComponent } from './image-group/image-group.component';
     FooterComponent,
     WhyUsComponent,
     ImageGroupComponent,
+    AboutUsComponent,
   ],
   imports: [
     BrowserModule,

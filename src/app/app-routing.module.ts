@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HiringHelmetComponent } from './hiring-helmet/hiring-helmet.component';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { CategoriesComponent } from './categories/categories.component';
 
 const routes: Routes = [
   {
@@ -21,6 +23,14 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent,
+  },
+  {
+    path: 'about-us',
+    component: AboutUsComponent,
+  },
+  {
+    path: 'all-categories',
+    component: CategoriesComponent,
   },
   {
     path: '**',

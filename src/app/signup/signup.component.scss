@@ -15,7 +15,7 @@ main {
 }
 
 mat-form-field {
-    width: 250px;
+  width: 250px;
 }
 
 .find-btn {
@@ -140,7 +140,7 @@ span {
 }
 
 mat-checkbox {
-    width: 50px;
+  width: 50px;
 }
 
 .mat-mdc-radio-button.mat-accent {
@@ -159,12 +159,79 @@ mat-checkbox {
 }
 
 .signup-btn {
-    background-color: #ff9000;
-    color: #fff;
-    font-weight: 500;
-    font-size: 1.2rem;
-    border: none;
-    padding: 10px 40px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  background-color: #ff9000;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border: none;
+  padding: 10px 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%; /* Adjust the width as needed */
+  max-width: 600px; /* Set a maximum width if desired */
+  margin: 0 auto; /* Center the container */
+}
+
+.find-brand {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.find-btn,
+.brand-btn,
+.signup-btn {
+  width: 100%; /* Make buttons full width */
+}
+
+.social-app {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Adjust the gap between social icons */
+}
+
+.name-email__container,
+.password-container {
+  flex-direction: column; /* Stack input fields on top of each other */
+}
+
+.captcha-container {
+  flex-direction: column; /* Stack captcha elements on top of each other */
+  align-items: flex-start; /* Align elements to the start */
+}
+
+@media screen and (min-width: 600px) {
+  /* Apply styles for screens with a minimum width of 600px */
+  .main-container {
+    width: 60%; /* Adjust the width for larger screens */
+  }
+
+  .find-brand {
+    flex-wrap: nowrap; /* Prevent buttons from wrapping */
+  }
+
+  .name-email__container,
+  .password-container {
+    flex-direction: row; /* Place input fields side by side */
+  }
+
+  .captcha-container {
+    flex-direction: row; /* Place captcha elements side by side */
+    align-items: baseline; /* Align elements to the baseline */
+  }
 }
