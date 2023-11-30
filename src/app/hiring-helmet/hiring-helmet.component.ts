@@ -48,7 +48,7 @@ export class HiringHelmetComponent implements OnInit {
 
     setTimeout(() => {
       this.showLoader = false;
-    });
+    },1000);
   }
 
   add(event: MatChipInputEvent): void {

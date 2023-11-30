@@ -1,5 +1,3 @@
-
-
 .brand-btn {
   background-color: #ff9000;
   color: #fff;
@@ -51,24 +49,31 @@
   background-color: #f2f2f2;
 }
 
-
-
 app-why-us {
   margin-bottom: 50px;
 }
 
-@media (max-width: 660px) {
-
-
-  app-why-us {
-  position: relative;
-  top: 50px;
-  margin-bottom: 50px;
+section {
+  display: flex;
+  justify-content: center;
 }
+
+// main {
+//     display: flex;
+// }
+
+.main-container {
+}
+
+@media (max-width: 660px) {
+  app-why-us {
+    position: relative;
+    top: 50px;
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 550px) {
-
   .picture-side_bar {
     display: flex;
     flex-direction: column;
@@ -76,14 +81,9 @@ app-why-us {
     align-items: center;
   }
 
-
-
   .h1-online-eng__title {
     font-size: 3rem !important;
   }
-
-
-
 }
 
 @media (max-width: 850px) {
@@ -95,7 +95,6 @@ app-why-us {
 }
 
 @media (max-width: 350px) {
-  .main-container,
   .about-us {
     display: flex;
     flex-direction: column;
@@ -178,7 +177,7 @@ app-why-us {
   }
 }
 
-@media (min-width:550px) {
+@media (min-width: 550px) {
   .input {
     max-width: 400px !important;
   }

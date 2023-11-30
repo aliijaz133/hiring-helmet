@@ -65,46 +65,51 @@
     </div>
   </div>
 </main>
+
 <section>
-  <div class="section-container">
-    <h1 class="about-us__title">Contact Us</h1>
-  </div>
-  <div class="home-container">
-    <div class="home-container1">
-      <div class="home-container2">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-6 col-lg-6 text-center">
+        <h2 class="about-us__title">Contact Us</h2>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-12 col-md-6 col-lg-6">
+        <form class="form_area">
+          <div class="form_inner">
+            <div class="form_fields">
+              <mat-form-field appearance="outline" class="item1">
+                <mat-label>First Name</mat-label>
+                <input matInput type="text" />
+              </mat-form-field>
+              <mat-form-field appearance="outline" class="item2">
+                <mat-label>Last Name</mat-label>
+                <input matInput type="text" />
+              </mat-form-field>
+              <mat-form-field appearance="outline" class="item3">
+                <mat-label>Email</mat-label>
+                <input matInput type="text" />
+              </mat-form-field>
+              <mat-form-field appearance="outline" class="item4">
+                <mat-label>Contact Number</mat-label>
+                <input matInput type="text" />
+              </mat-form-field>
+              <textarea placeholder="Massage" class="item5"></textarea>
+            </div>
+            <button type="button" class="button">Button</button>
+          </div>
+          <div class="after_class"></div>
+        </form>
+      </div>
+      <div class="col-12 col-md-6 col-lg-6">
         <img
           src="../../assets/image/client_images.png"
           alt="image"
           class="home-image"
         />
       </div>
-      <div class="home-container3">
-        <div class="home-container4">
-          <form class="home-form">
-            <mat-form-field appearance="outline" class="home-textinput">
-              <mat-label>First Name</mat-label>
-              <input matInput type="text" />
-            </mat-form-field>
-            <mat-form-field appearance="outline" class="home-textinput1">
-              <mat-label>First Name</mat-label>
-              <input matInput type="text" />
-            </mat-form-field>
-            <mat-form-field appearance="outline" class="home-textinput2">
-              <mat-label>First Name</mat-label>
-              <input matInput type="text" />
-            </mat-form-field>
-            <mat-form-field appearance="outline" class="home-textinput3">
-              <mat-label>First Name</mat-label>
-              <input matInput type="text" />
-            </mat-form-field>
-            <textarea
-              placeholder="placeholder"
-              class="home-textarea textarea"
-            ></textarea>
-            <button type="button" class="home-button button">Button</button>
-          </form>
-        </div>
-      </div>
     </div>
   </div>
 </section>
+<app-footer></app-footer>
+<loader *ngIf="showLoader"></loader>
