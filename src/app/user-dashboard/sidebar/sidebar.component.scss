@@ -1,0 +1,46 @@
+/* styles.css or your component-specific styles file */
+
+.sidenav-container {
+  height: 100%;
+}
+
+mat-list-item {
+  width: 200px;
+  background-color: orange;
+}
+
+span {
+  color: #ffffff !important;
+}
+
+mat-nav-list {
+    display: contents;
+}
+
+mat-icon {
+    color: #ffffff;
+    margin-right: 20px;
+}
+
+mat-list-item {
+  background-color: orange;
+  color: white;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding: 0 16px;
+}
+
+mat-list-item:hover {
+    background-color: rgb(255, 136, 0) !important;
+}
+
+button {
+    background-color: #ffffff00;
+    border: none;
+}
+
+.mat-list-item {
+  cursor: pointer;
+}

@@ -1,0 +1,42 @@
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+app-sidebar {
+  width: 200px;
+}
+
+.profile-container {
+  display: flex;
+  align-items: baseline;
+  position: relative;
+  top: 50px;
+}
+
+.profile-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.range-group {
+  display: grid;
+  grid-template-columns: 200px 140px auto;
+  place-items: baseline;
+}
+
+p {
+  font-size: 18px !important;
+}
+
+.rate-container {
+  display: flex;
+  justify-content: space-between;
+}

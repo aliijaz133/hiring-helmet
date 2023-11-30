@@ -38,6 +38,13 @@ const routes: Routes = [
     component: InteriorDesignComponent,
   },
   {
+    path: 'user-dashboard',
+    loadChildren: () =>
+      import('./user-dashboard/user-dashboard.module').then(
+        (u) => u.UserDashboardModule
+      ),
+  },
+  {
     path: '**',
     redirectTo: 'hiring-helmet',
     pathMatch: 'full',

@@ -15,7 +15,15 @@ import { InteriorDesignDialogComponent } from './interior-design-dialog/interior
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { CreateOrderComponent } from './order/create-order/create-order.component';
 import { SuccessfullyCreatedComponent } from './successfully-created/successfully-created.component';
-
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -31,11 +39,21 @@ import { SuccessfullyCreatedComponent } from './successfully-created/successfull
     InteriorDesignDialogComponent,
     UserProfileComponent,
     CreateOrderComponent,
-    SuccessfullyCreatedComponent
+    SuccessfullyCreatedComponent,
+    HeaderComponent,
+    FooterComponent,
+    SidebarComponent,
   ],
   imports: [
     CommonModule,
-    UserDashboardRoutingModule
-  ]
+    UserDashboardRoutingModule,
+    MatFormFieldModule,
+    MatIconModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatInputModule,
+    MatSidenavModule,
+    MatListModule,
+  ],
 })
-export class UserDashboardModule { }
+export class UserDashboardModule {}

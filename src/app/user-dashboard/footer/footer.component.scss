@@ -1,0 +1,23 @@
+footer {
+  background-color: #ff9000 !important;
+  color: #fff !important;
+}
+
+.title-f {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+mat-label {
+  color: #fff !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+mat-form-field {
+  width: 250px;
+}
