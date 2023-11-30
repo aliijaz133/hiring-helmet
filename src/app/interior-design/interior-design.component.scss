@@ -1,0 +1,36 @@
+main {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+
+.images {
+  width: -webkit-fill-available;
+}
+
+.description {
+    margin-top: 1em;
+}
+
+.brand-btn {
+  background-color: #ff9000;
+  color: #fff;
+  border: 1px solid #ff9000;
+  text-decoration: #fff underline;
+  padding: 12px 30px;
+  font-weight: 500;
+  height: max-content;
+}
+
+.brand-btn:hover {
+  background-color: #fff;
+  color: #ff9000;
+  text-decoration: #ff9000 underline;
+}

@@ -5,6 +5,7 @@ import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { CategoriesComponent } from './categories/categories.component';
+import { InteriorDesignComponent } from './interior-design/interior-design.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'all-categories',
     component: CategoriesComponent,
+  },
+  {
+    path: 'find-service',
+    component: InteriorDesignComponent,
   },
   {
     path: '**',

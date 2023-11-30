@@ -25,6 +25,7 @@ import { MatChipsModule } from '@angular/material/chips';
 import { WhyUsComponent } from './why-us/why-us.component';
 import { ImageGroupComponent } from './image-group/image-group.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { InteriorDesignComponent } from './interior-design/interior-design.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
     WhyUsComponent,
     ImageGroupComponent,
     AboutUsComponent,
+    InteriorDesignComponent,
   ],
   imports: [
     BrowserModule,
