@@ -1,1 +1,66 @@
 <app-header></app-header>
+<div class="main-container">
+  <app-sidebar></app-sidebar>
+  <main>
+    <div class="image-box">
+      <img
+        src="../../../assets/image/Ellipse 4.png"
+        alt="User Profile"
+        style="width: 170px"
+      />
+    </div>
+    <div class="profile-detail">
+      <div class="profile-name__details">
+        <h3 class="h3-t">Tiffany Hardway</h3>
+        <p class="p-detail">
+          Your next step is to start searching our Influencer database for your
+          perfect Influencer, and start posting jobs! There are so many ways we
+          make sure your campaign is a massive success inside our platform.
+          Also, make sure to check out how you can Hire The Influence Group to
+          find your perfect influencer for you!
+        </p>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6 col-lg-6">
+          <form class="form_area">
+            <div class="form_inner">
+              <div class="form_fields">
+                <mat-form-field appearance="outline" class="item1">
+                  <mat-label>First Name</mat-label>
+                  <input matInput type="text" />
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="item2">
+                  <mat-label>Last Name</mat-label>
+                  <input matInput type="text" />
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="item3">
+                  <mat-label>Age</mat-label>
+                  <input matInput type="number" min="1" />
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                  <mat-label>Gender</mat-label>
+                  <mat-select>
+                    <mat-option
+                      *ngFor="let gender of genders"
+                      [value]="genders"
+                      >{{ gender.viewValue }}</mat-option
+                    >
+                  </mat-select>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline" class="item5">
+                  <mat-label>Email</mat-label>
+                  <input matInput type="email" />
+                </mat-form-field>
+              </div>
+              <button type="button" class="button brand-btn">Save</button>
+            </div>
+            <div class="after_class"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<app-footer></app-footer>

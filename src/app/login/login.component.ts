@@ -24,6 +24,6 @@ export class LoginComponent implements OnInit {
   }
 
   loggedIn(){
-    this.router.navigate(['/user-dashboard/profile'])
+    this.router.navigate(['/user-dashboard/home'])
   }
 }

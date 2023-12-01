@@ -11,7 +11,7 @@ mat-list-item {
 }
 
 span {
-  color: #ffffff !important;
+  color: #000000 !important;
 }
 
 mat-nav-list {
@@ -19,7 +19,7 @@ mat-nav-list {
 }
 
 mat-icon {
-  color: #ffffff;
+  color: #000000;
   margin-right: 20px;
 }
 
@@ -44,4 +44,9 @@ button {
 
 .mat-list-item {
   cursor: pointer;
+}
+
+
+.active span {
+  color: #ffffff !important;
 }

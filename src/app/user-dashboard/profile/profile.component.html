@@ -214,21 +214,53 @@
             <img
               src="../../../assets/image/Ellipse 8.png"
               alt="Image"
-              style="width: 40px"
+              style="width: 40px; margin-top: 10px; margin-left: 15px"
             />
-            <div class="name-last_text">
+            <div class="name-last_text" style="margin-top: 10px;">
               <h5>Chartgram</h5>
               <p class="last-text">Chatgram Web was updated.</p>
             </div>
           </div>
         </div>
         <div class="icons-container">
-          <mat-icon>search</mat-icon>
-          <mat-icon>local_phone</mat-icon>
-          <mat-icon>more_vert</mat-icon>
+          <mat-icon style="cursor: pointer">search</mat-icon>
+          <mat-icon style="cursor: pointer">local_phone</mat-icon>
+          <mat-icon style="cursor: pointer">more_vert</mat-icon>
         </div>
       </div>
-      <div class="text-area__box"></div>
+      <div class="text-area__box">
+        <div class="searchbar">
+          <div class="searchbar-wrapper">
+            <div class="searchbar-left">
+              <div class="search-icon-wrapper">
+                <mat-icon style="color: #707991"
+                  >sentiment_satisfied_alt</mat-icon
+                >
+              </div>
+            </div>
+
+            <div class="searchbar-center">
+              <div class="searchbar-input-spacer"></div>
+
+              <input
+                type="text"
+                class="searchbar-input"
+                maxlength="2048"
+                name="q"
+                autocapitalize="off"
+                autocomplete="off"
+                title="Search"
+                role="combobox"
+                placeholder="Message"
+              />
+            </div>
+
+            <button class="searchbar-right">
+              <mat-icon>send</mat-icon>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </article>

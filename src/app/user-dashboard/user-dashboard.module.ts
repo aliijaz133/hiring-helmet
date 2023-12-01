@@ -24,6 +24,7 @@ import { MatInputModule } from '@angular/material/input';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { MatListModule } from '@angular/material/list';
     MatInputModule,
     MatSidenavModule,
     MatListModule,
+    MatSelectModule,
   ],
 })
 export class UserDashboardModule {}
