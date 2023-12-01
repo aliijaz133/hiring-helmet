@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ProfileComponent } from './profile/profile.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { HistoryComponent } from './history/history.component';
+import { PaymentComponent } from './payment/payment.component';
 
 const routes: Routes = [
   {
@@ -16,6 +18,14 @@ const routes: Routes = [
   {
     path: 'my-profile',
     component: UserProfileComponent,
+  },
+  {
+    path: 'profile-history',
+    component: HistoryComponent,
+  },
+  {
+    path: 'total-payment',
+    component: PaymentComponent,
   },
   {
     path: '**',

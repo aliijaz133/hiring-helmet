@@ -1,1 +1,152 @@
-<p>history works!</p>
+<app-header></app-header>
+<div class="main-container">
+  <app-sidebar></app-sidebar>
+  <main>
+    <div class="recent-orders">
+      <h3 class="heading3">Recent Orders (3)</h3>
+      <div class="history-details">
+        <img
+          src="../../../assets/image/image 3.png"
+          alt="Image"
+          style="width: 8%; border-radius: 10px; height: auto"
+        />
+        <div class="value-view__value">
+          <h3 class="h3-v-t">Name</h3>
+          <p>Interior Designing</p>
+        </div>
+        <div class="value-view__value">
+          <h3 class="h3-v-t">Price</h3>
+          <p>$15,0000</p>
+        </div>
+        <div class="value-view__value">
+          <h3 class="h3-v-t">Delivered at</h3>
+          <p>Yesterday</p>
+        </div>
+        <div class="value-view__value">
+          <h3 class="h3-v-t">Status</h3>
+          <p
+            style="
+              background-color: #00b998;
+              border-radius: 20px;
+              color: #fff;
+              padding: 5px;
+            "
+          >
+            Completed
+          </p>
+        </div>
+      </div>
+      <div class="history-details">
+        <img
+          src="../../../assets/image/image 3.png"
+          alt="Image"
+          style="width: 8%; border-radius: 10px; height: auto"
+        />
+        <div class="value-view__value">
+          <h3 class="h3-v-t">Name</h3>
+          <p>Interior Designing</p>
+        </div>
+        <div class="value-view__value">
+          <h3 class="h3-v-t">Price</h3>
+          <p>$15,0000</p>
+        </div>
+        <div class="value-view__value">
+          <h3 class="h3-v-t">Delivered at</h3>
+          <p>Yesterday</p>
+        </div>
+        <div class="value-view__value">
+          <h3 class="h3-v-t">Status</h3>
+          <p
+            style="
+              background-color: #00b998;
+              border-radius: 20px;
+              color: #fff;
+              padding: 5px;
+            "
+          >
+            Completed
+          </p>
+        </div>
+      </div>
+      <div class="history-details">
+        <img
+          src="../../../assets/image/image 3.png"
+          alt="Image"
+          style="width: 8%; border-radius: 10px; height: auto"
+        />
+        <div class="value-view__value">
+          <h3 class="h3-v-t">Name</h3>
+          <p>Interior Designing</p>
+        </div>
+        <div class="value-view__value">
+          <h3 class="h3-v-t">Price</h3>
+          <p>$15,0000</p>
+        </div>
+        <div class="value-view__value">
+          <h3 class="h3-v-t">Delivered at</h3>
+          <p>Yesterday</p>
+        </div>
+        <div class="value-view__value">
+          <h3 class="h3-v-t">Status</h3>
+          <p
+            style="
+              background-color: #00b998;
+              border-radius: 20px;
+              color: #fff;
+              padding: 5px;
+            "
+          >
+            Completed
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<h4>Completed</h4>
+
+<table class="table">
+  <thead>
+    <tr style="border: none;">
+      <th scope="col" class="th-h">Image</th>
+      <th scope="col" class="th-h">Name</th>
+      <th scope="col" class="th-h">Service</th>
+      <th scope="col" class="th-h">Deliver At</th>
+      <th scope="col" class="th-h">Total</th>
+      <th scope="col" class="th-h">Status</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let user of userDetail">
+    <tr>
+      <td scope="row"><img [src]="user.image" alt="User Image" style="width: 25%;"/></td>
+      <td class="td-t">
+        <p style="position: relative; top: 18px">{{ user.name }}</p>
+      </td>
+      <td class="td-t">
+        <p style="position: relative; top: 18px">{{ user.service }}</p>
+      </td>
+      <td class="td-t">
+        <p style="position: relative; top: 18px">{{ user.deliver_at }}</p>
+      </td>
+      <td class="td-t">
+        <p style="position: relative; top: 18px">{{ user.total }}</p>
+      </td>
+      <td>
+        <p
+          style="
+            background-color: #00b998;
+            border-radius: 20px;
+            color: #fff;
+            padding: 5px;
+            width: fit-content;
+            position: relative;
+            top: 18px;
+          "
+        >
+          Completed
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<app-footer></app-footer>
