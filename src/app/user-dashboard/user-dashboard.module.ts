@@ -25,6 +25,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatSelectModule } from '@angular/material/select';
+import { MatDialogModule } from '@angular/material/dialog';
+import { CreditCardComponent } from './credit-card/credit-card.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +46,7 @@ import { MatSelectModule } from '@angular/material/select';
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
+    CreditCardComponent,
   ],
   imports: [
     CommonModule,
@@ -56,6 +59,7 @@ import { MatSelectModule } from '@angular/material/select';
     MatSidenavModule,
     MatListModule,
     MatSelectModule,
+    MatDialogModule,
   ],
 })
 export class UserDashboardModule {}
