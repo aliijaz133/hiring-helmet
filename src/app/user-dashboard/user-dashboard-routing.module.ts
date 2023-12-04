@@ -6,6 +6,7 @@ import { HistoryComponent } from './history/history.component';
 import { PaymentComponent } from './payment/payment.component';
 import { OrdersComponent } from './orders/orders.component';
 import { ServiceOrderComponent } from './service-order/service-order.component';
+import { CreateOrderComponent } from './create-order/create-order.component';
 
 const routes: Routes = [
   {
@@ -39,7 +40,7 @@ const routes: Routes = [
   },
   {
     path: 'create-order',
-    // component: CreateOrderComponent,
+    component: CreateOrderComponent
   },
   {
     path: '**',

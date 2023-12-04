@@ -1,0 +1,162 @@
+<app-header></app-header>
+<div class="main-container">
+  <app-sidebar></app-sidebar>
+  <main>
+    <h1
+      class="text-center"
+      style="font-family: Playfair Display; font-size: 36px; font-weight: 400"
+    >
+      Create Orders
+    </h1>
+    <div class="form-container">
+      <form>
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+            flex-wrap: wrap;
+          "
+        >
+          <mat-form-field appearance="outline">
+            <mat-label>Select Service</mat-label>
+            <mat-select>
+              <mat-option *ngFor="let service of services" [value]="services">{{
+                service.viewValue
+              }}</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Seller</mat-label>
+            <mat-select>
+              <mat-option *ngFor="let service of services" [value]="services">{{
+                service.viewValue
+              }}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <mat-radio-group aria-label="Select an option">
+          <mat-radio-button value="1" (change)="toogleDelivery()"
+            >One Delivery: Deliver a finished project</mat-radio-button
+          >
+          <br />
+          <mat-radio-button value="2" (change)="toogleMileStone()"
+            >Milestones: Deliver gradually in steps</mat-radio-button
+          >
+        </mat-radio-group>
+
+        <div [style.display]="showDeliverybox ? 'block' : 'none'">
+          <div style="display: flex; flex-direction: column">
+            <div
+              style="
+                border-bottom: 2px dashed lightgrey;
+                display: flex;
+                justify-content: space-between;
+              "
+            >
+              <p>Total Amouunt</p>
+
+              <mat-form-field floatLabel="always">
+                <mat-label>Amount</mat-label>
+                <input
+                  matInput
+                  type="number"
+                  class="example-right-align"
+                  placeholder="0"
+                />
+                <span matTextPrefix>$&nbsp;</span>
+                <span matTextSuffix>.00</span>
+              </mat-form-field>
+            </div>
+            <div
+              style="
+                border-bottom: 2px dashed lightgrey;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <p>Total Amouunt</p>
+
+              <mat-form-field appearance="outline">
+                <mat-label>Delivery Time</mat-label>
+                <mat-select>
+                  <mat-option
+                    *ngFor="let service of services"
+                    [value]="services"
+                    >{{ service.viewValue }}</mat-option
+                  >
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div
+              style="
+                border-bottom: 2px dashed lightgrey;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <p>Total Amouunt</p>
+
+              <mat-form-field appearance="outline">
+                <mat-label>Number of revisions (Optional)</mat-label>
+                <mat-select>
+                  <mat-option
+                    *ngFor="let service of services"
+                    [value]="services"
+                    >{{ service.viewValue }}</mat-option
+                  >
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+
+        <div [style.display]="showMileStone ? 'block' : 'none'">
+          <div style="display: flex; flex-direction: column">
+            <table>
+              <tr>
+                <th>Milestones</th>
+                <th>Duration</th>
+                <th>Amount</th>
+              </tr>
+              <tr>
+                <td>1st Milestone</td>
+                <td>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Number of revisions (Optional)</mat-label>
+                    <mat-select>
+                      <mat-option
+                        *ngFor="let service of services"
+                        [value]="services"
+                        >{{ service.viewValue }}</mat-option
+                      >
+                    </mat-select>
+                  </mat-form-field>
+                </td>
+                <td>
+                  <mat-form-field floatLabel="always">
+                    <mat-label>Amount</mat-label>
+                    <input
+                      matInput
+                      type="number"
+                      class="example-right-align"
+                      placeholder="0"
+                    />
+                    <span matTextPrefix>$&nbsp;</span>
+                    <span matTextSuffix>.00</span>
+                  </mat-form-field>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <button class="brand-btn">Create Order</button>
+      </form>
+    </div>
+  </main>
+</div>
+<app-footer></app-footer>

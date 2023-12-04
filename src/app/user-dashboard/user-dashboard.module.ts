@@ -13,7 +13,6 @@ import { OrdersComponent } from './orders/orders.component';
 import { InteriorDesignComponent } from './interior-design/interior-design.component';
 import { InteriorDesignDialogComponent } from './interior-design-dialog/interior-design-dialog.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
-import { SuccessfullyCreatedComponent } from './successfully-created/successfully-created.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -34,6 +33,8 @@ import { RecurringorderComponent } from './rate-detail/recurringorder/recurringo
 import { ServiceOrderComponent } from './service-order/service-order.component';
 import { DragimageComponent } from './dragimage/dragimage.component';
 import { CreatedSuccessfullyComponent } from './created-successfully/created-successfully.component';
+import { CreateOrderComponent } from './create-order/create-order.component';
+import { MatRadioModule } from '@angular/material/radio';
 @NgModule({
   declarations: [
     UserDashboardComponent,
@@ -47,7 +48,6 @@ import { CreatedSuccessfullyComponent } from './created-successfully/created-suc
     InteriorDesignComponent,
     InteriorDesignDialogComponent,
     UserProfileComponent,
-    SuccessfullyCreatedComponent,
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
@@ -59,6 +59,7 @@ import { CreatedSuccessfullyComponent } from './created-successfully/created-suc
     ServiceOrderComponent,
     DragimageComponent,
     CreatedSuccessfullyComponent,
+    CreateOrderComponent,
   ],
   imports: [
     CommonModule,
@@ -73,6 +74,7 @@ import { CreatedSuccessfullyComponent } from './created-successfully/created-suc
     MatSelectModule,
     MatDialogModule,
     MatTabsModule,
+    MatRadioModule,
   ],
 })
 export class UserDashboardModule {}

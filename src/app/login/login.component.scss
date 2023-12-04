@@ -15,7 +15,7 @@ main {
 }
 
 mat-form-field {
-    width: 400px;
+  width: 400px;
 }
 
 .find-btn {
@@ -65,16 +65,16 @@ mat-form-field {
 }
 
 .signup-btn {
-    background-color: #ff9000;
-    color: #fff;
-    font-weight: 500;
-    font-size: 1.2rem;
-    border: none;
-    padding: 5px 40px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 400px;
-    border-radius: 0px !important;
+  background-color: #ff9000;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border: none;
+  padding: 5px 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 400px;
+  border-radius: 0px !important;
 }
 
 .mat-mdc-radio-button.mat-accent {
@@ -92,3 +92,11 @@ mat-form-field {
   --mat-radio-disabled-label-color: rgba(0, 0, 0, 0.38);
 }
 
+@media (max-width: 550px) {
+  mat-form-field {
+    width: auto;
+  }
+  .signup-btn {
+    width: auto;
+  }
+}
