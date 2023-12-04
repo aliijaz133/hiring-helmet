@@ -4,6 +4,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { HistoryComponent } from './history/history.component';
 import { PaymentComponent } from './payment/payment.component';
+import { OrdersComponent } from './orders/orders.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'total-payment',
     component: PaymentComponent,
+  },
+  {
+    path: 'orders',
+    component: OrdersComponent,
   },
   {
     path: '**',

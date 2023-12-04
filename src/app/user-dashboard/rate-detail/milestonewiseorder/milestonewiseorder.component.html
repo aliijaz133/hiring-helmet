@@ -1,0 +1,40 @@
+<main class="oneTimeData">
+  <div class="section" *ngFor="let user of paymentDetail">
+    <img
+      [src]="user.image"
+      alt="user Image"
+      style="border-radius: 10px; width: 5%; margin: 10px"
+    />
+    <div class="view_values">
+      <h4>SERVICE NAME</h4>
+      <p class="user-data">{{ user.service_Name }}</p>
+    </div>
+    <div class="view_values">
+      <h4>TOTAL</h4>
+      <p class="user-data">{{ user.total | currency }}</p>
+    </div>
+    <div class="view_values">
+      <h4>Buyer</h4>
+      <p class="user-data">{{ user.buyer }}</p>
+    </div>
+    <div class="view_values">
+      <h4>DUE IN</h4>
+      <p class="user-data">{{ user.due_in }}</p>
+    </div>
+    <div class="view_values">
+      <h4>Status</h4>
+      <p
+        class="user-data"
+        style="
+          background-color: #0c8ed7;
+          border-radius: 20px;
+          color: #fff;
+          padding: 5px;
+        "
+      >
+        {{ user.status }}
+      </p>
+    </div>
+    <mat-icon style="cursor: pointer">more_vert</mat-icon>
+  </div>
+</main>

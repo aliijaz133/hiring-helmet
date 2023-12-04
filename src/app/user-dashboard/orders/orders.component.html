@@ -1,1 +1,41 @@
-<p>orders works!</p>
+<app-header></app-header>
+<div class="main-container">
+  <app-sidebar></app-sidebar>
+  <main>
+    <mat-tab-group>
+      <mat-tab
+        *ngFor="let tab of asyncTabs | async; let i = index; trackBy: trackTab"
+        [class.active]="i === activeTabIndex"
+      >
+        <ng-template mat-tab-label>
+          <button
+            mat-icon-button
+            [ngClass]="{ 'active-button': i === activeTabIndex }"
+            (click)="setActiveTab(i)"
+          >
+            {{ tab.label }}
+          </button>
+        </ng-template>
+
+        <ng-container [ngSwitch]="tab.label">
+          <ng-container *ngSwitchCase="'First'">
+            <app-onetimepayment></app-onetimepayment>
+          </ng-container>
+          <ng-container *ngSwitchCase="'Second'">
+            <app-milestonewiseorder></app-milestonewiseorder>
+          </ng-container>
+          <ng-container *ngSwitchCase="'Third'">
+            <app-loader></app-loader>
+          </ng-container>
+          <ng-container *ngSwitchCase="'Forth'">
+            <h1>Data Not Found</h1>
+          </ng-container>
+          <ng-container *ngSwitchDefault>
+            <app-loader></app-loader>
+          </ng-container>
+        </ng-container>
+      </mat-tab>
+    </mat-tab-group>
+  </main>
+</div>
+<app-footer></app-footer>

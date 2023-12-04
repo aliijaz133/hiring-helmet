@@ -27,7 +27,11 @@ import { MatListModule } from '@angular/material/list';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDialogModule } from '@angular/material/dialog';
 import { CreditCardComponent } from './credit-card/credit-card.component';
-
+import { MatTabsModule } from '@angular/material/tabs';
+import { OnetimepaymentComponent } from './rate-detail/onetimepayment/onetimepayment.component';
+import { MilestonewiseorderComponent } from './rate-detail/milestonewiseorder/milestonewiseorder.component';
+import { SubscribedorderComponent } from './rate-detail/subscribedorder/subscribedorder.component';
+import { RecurringorderComponent } from './rate-detail/recurringorder/recurringorder.component';
 @NgModule({
   declarations: [
     UserDashboardComponent,
@@ -47,6 +51,10 @@ import { CreditCardComponent } from './credit-card/credit-card.component';
     FooterComponent,
     SidebarComponent,
     CreditCardComponent,
+    OnetimepaymentComponent,
+    MilestonewiseorderComponent,
+    SubscribedorderComponent,
+    RecurringorderComponent,
   ],
   imports: [
     CommonModule,
@@ -60,6 +68,7 @@ import { CreditCardComponent } from './credit-card/credit-card.component';
     MatListModule,
     MatSelectModule,
     MatDialogModule,
+    MatTabsModule,
   ],
 })
 export class UserDashboardModule {}
