@@ -25,10 +25,10 @@ export class OrdersComponent implements OnInit {
     this.asyncTabs = new Observable((observer: Observer<ExampleTab[]>) => {
       setTimeout(() => {
         observer.next([
-          { label: 'First', content: 'Content 1' },
-          { label: 'Second', content: 'Content 2' },
-          { label: 'Third', content: 'Content 3' },
-          { label: 'Forth', content: 'Content 4' },
+          { label: 'One Time Payment', content: 'Content 1' },
+          { label: 'Mile Stone Wise Order', content: 'Content 2' },
+          { label: 'Subscribed Order', content: 'Content 3' },
+          { label: 'Recurring Order', content: 'Content 4' },
         ]);
       }, 1000);
     });

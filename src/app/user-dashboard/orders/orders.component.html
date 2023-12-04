@@ -18,16 +18,16 @@
         </ng-template>
 
         <ng-container [ngSwitch]="tab.label">
-          <ng-container *ngSwitchCase="'First'">
+          <ng-container *ngSwitchCase="'One Time Payment'">
             <app-onetimepayment></app-onetimepayment>
           </ng-container>
-          <ng-container *ngSwitchCase="'Second'">
+          <ng-container *ngSwitchCase="'Mile Stone Wise Order'">
             <app-milestonewiseorder></app-milestonewiseorder>
           </ng-container>
-          <ng-container *ngSwitchCase="'Third'">
+          <ng-container *ngSwitchCase="'Subscribed Order'">
             <app-loader></app-loader>
           </ng-container>
-          <ng-container *ngSwitchCase="'Forth'">
+          <ng-container *ngSwitchCase="'Recurring Order'">
             <h1>Data Not Found</h1>
           </ng-container>
           <ng-container *ngSwitchDefault>
