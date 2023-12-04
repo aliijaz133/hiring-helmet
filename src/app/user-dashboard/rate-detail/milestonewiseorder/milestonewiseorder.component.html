@@ -1,5 +1,5 @@
 <main class="oneTimeData">
-  <div class="section" *ngFor="let user of paymentDetail">
+  <div class="section" *ngFor="let user of paymentDetail;" >
     <img
       [src]="user.image"
       alt="user Image"
@@ -35,6 +35,6 @@
         {{ user.status }}
       </p>
     </div>
-    <mat-icon style="cursor: pointer">more_vert</mat-icon>
+    <mat-icon style="cursor: pointer" (click)="serviceOrder()">more_vert</mat-icon>
   </div>
 </main>

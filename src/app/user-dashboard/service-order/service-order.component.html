@@ -1,0 +1,137 @@
+<app-header></app-header>
+<div class="main-container">
+  <app-sidebar></app-sidebar>
+  <main class="container-fluid">
+    <div class="title-container">
+      <div class="title-btn">
+        <div style="display: flex; align-items: center">
+          <mat-icon
+            style="
+              background-color: black;
+              color: #fff;
+              border-radius: 50px;
+              cursor: pointer;
+              margin-right: 10px;
+            "
+            >chevron_left</mat-icon
+          >
+          <div style="display: flex; flex-direction: column; gap: 20px">
+            <div style="display: flex; gap: 20px">
+              <img
+                src="../../../assets/image/image 3.png"
+                alt="user Image"
+                style="border-radius: 10px; width: 15%"
+              />
+              <div>
+                <h4 class="h4-t">Service Name</h4>
+                <p
+                  style="
+                    font-family: 'Open Sans';
+                    font-size: 22px;
+                    font-weight: 400;
+                    color: #0e1b1b;
+                  "
+                >
+                  Interior Designing
+                </p>
+              </div>
+            </div>
+            <div style="display: flex; gap: 10px">
+              <p
+                style="
+                  text-transform: uppercase;
+                  font-size: 16px;
+                  font-weight: 600;
+                "
+              >
+                Buyer:
+              </p>
+              <img
+                src="../../../assets/image/Ellipse 8.png"
+                alt="User Image"
+                style="width: 5%; height: 25px"
+              />
+              <p
+                style="
+                  font-family: 'Open Sans';
+                  font-size: 14px;
+                  font-weight: 400;
+                  color: #0c8ed7;
+                  text-decoration: #0c8ed7 underline;
+                "
+              >
+                Tiffany Hardway
+              </p>
+              <p
+                style="
+                  font-family: 'Open Sans';
+                  font-size: 16px;
+                  font-weight: 600;
+                  color: #0e1b1b;
+                "
+              >
+                ORDER ID: <code style="color: #323238">#45321111</code>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <h2
+            style="
+              text-align: center;
+              font-size: 30px;
+              font-weight: 700;
+              font-family: 'Open Sans';
+            "
+          >
+            $15,0000
+          </h2>
+          <div style="display: flex; gap: 10px">
+            <p style="font-family: 'Open Sans'; font-size: 16px">Status</p>
+            <p
+              style="
+                font-family: 'Open Sans';
+                font-size: 14px;
+                background-color: #0c8ed7;
+                border-radius: 20px;
+                color: #fff;
+                padding: 5px;
+              "
+            >
+              In Progress
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="timer-container">
+      <h3
+        style="
+          font-family: 'Playfair Display';
+          font-size: 36px;
+          font-weight: 400;
+        "
+      >
+        Due In
+      </h3>
+      <div style="display: flex; gap: 20px; justify-content: center">
+        <div>
+          <h5 style="background-color: #ebebeb">{{ timeNow | date : "hh" }}</h5>
+          <p style="text-align: center; text-transform: uppercase">Hours</p>
+        </div>
+        <h5 style="color: #ff9000; font-weight: 700">:</h5>
+        <div>
+          <h5 style="background-color: #ebebeb">{{ timeNow | date : "mm" }}</h5>
+          <p style="text-align: center; text-transform: uppercase">Min</p>
+        </div>
+        <h5 style="color: #ff9000; font-weight: 700">:</h5>
+        <div>
+          <h5 style="background-color: #ebebeb">{{ timeNow | date : "ss" }}</h5>
+          <p style="text-align: center; text-transform: uppercase">Sec</p>
+        </div>
+      </div>
+      <button class="brand-btn">Deliver Your Order</button>
+    </div>
+  </main>
+</div>
+<app-footer></app-footer>

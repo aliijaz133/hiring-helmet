@@ -32,6 +32,7 @@ import { OnetimepaymentComponent } from './rate-detail/onetimepayment/onetimepay
 import { MilestonewiseorderComponent } from './rate-detail/milestonewiseorder/milestonewiseorder.component';
 import { SubscribedorderComponent } from './rate-detail/subscribedorder/subscribedorder.component';
 import { RecurringorderComponent } from './rate-detail/recurringorder/recurringorder.component';
+import { ServiceOrderComponent } from './service-order/service-order.component';
 @NgModule({
   declarations: [
     UserDashboardComponent,
@@ -55,6 +56,7 @@ import { RecurringorderComponent } from './rate-detail/recurringorder/recurringo
     MilestonewiseorderComponent,
     SubscribedorderComponent,
     RecurringorderComponent,
+    ServiceOrderComponent,
   ],
   imports: [
     CommonModule,

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 interface PaymentDetail {
   image: string;
@@ -82,7 +83,11 @@ export class MilestonewiseorderComponent implements OnInit {
     },
   ];
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
+
+  serviceOrder() {
+    this.router.navigate(['/user-dashboard/service-order/find-order']);
+  }
 }
