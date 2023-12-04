@@ -38,6 +38,10 @@ const routes: Routes = [
     component: ServiceOrderComponent,
   },
   {
+    path: 'create-order',
+    // component: CreateOrderComponent,
+  },
+  {
     path: '**',
     redirectTo: 'profile',
     pathMatch: 'full',

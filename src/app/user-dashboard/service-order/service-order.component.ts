@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { DragimageComponent } from '../dragimage/dragimage.component';
 
 @Component({
   selector: 'app-service-order',
@@ -8,11 +10,15 @@ import { Component, OnInit } from '@angular/core';
 export class ServiceOrderComponent implements OnInit {
   timeNow?: number;
 
-  constructor() {
+  constructor(private dialog: MatDialog) {
     setInterval(() => {
       this.timeNow = Date.now();
     }, 1);
   }
 
   ngOnInit(): void {}
+
+  dragImage() {
+    this.dialog.open(DragimageComponent);
+  }
 }

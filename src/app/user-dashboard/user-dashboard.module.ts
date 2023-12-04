@@ -13,7 +13,6 @@ import { OrdersComponent } from './orders/orders.component';
 import { InteriorDesignComponent } from './interior-design/interior-design.component';
 import { InteriorDesignDialogComponent } from './interior-design-dialog/interior-design-dialog.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
-import { CreateOrderComponent } from './order/create-order/create-order.component';
 import { SuccessfullyCreatedComponent } from './successfully-created/successfully-created.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -33,6 +32,8 @@ import { MilestonewiseorderComponent } from './rate-detail/milestonewiseorder/mi
 import { SubscribedorderComponent } from './rate-detail/subscribedorder/subscribedorder.component';
 import { RecurringorderComponent } from './rate-detail/recurringorder/recurringorder.component';
 import { ServiceOrderComponent } from './service-order/service-order.component';
+import { DragimageComponent } from './dragimage/dragimage.component';
+import { CreatedSuccessfullyComponent } from './created-successfully/created-successfully.component';
 @NgModule({
   declarations: [
     UserDashboardComponent,
@@ -46,7 +47,6 @@ import { ServiceOrderComponent } from './service-order/service-order.component';
     InteriorDesignComponent,
     InteriorDesignDialogComponent,
     UserProfileComponent,
-    CreateOrderComponent,
     SuccessfullyCreatedComponent,
     HeaderComponent,
     FooterComponent,
@@ -57,6 +57,8 @@ import { ServiceOrderComponent } from './service-order/service-order.component';
     SubscribedorderComponent,
     RecurringorderComponent,
     ServiceOrderComponent,
+    DragimageComponent,
+    CreatedSuccessfullyComponent,
   ],
   imports: [
     CommonModule,

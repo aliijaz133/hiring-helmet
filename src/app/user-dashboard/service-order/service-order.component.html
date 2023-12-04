@@ -116,22 +116,48 @@
       </h3>
       <div style="display: flex; gap: 20px; justify-content: center">
         <div>
-          <h5 style="background-color: #ebebeb">{{ timeNow | date : "hh" }}</h5>
+          <h5 style="background-color: #ebebeb; font-family: 'Roboto Mono'">
+            {{ timeNow | date : "hh" }}
+          </h5>
           <p style="text-align: center; text-transform: uppercase">Hours</p>
         </div>
         <h5 style="color: #ff9000; font-weight: 700">:</h5>
         <div>
-          <h5 style="background-color: #ebebeb">{{ timeNow | date : "mm" }}</h5>
+          <h5 style="background-color: #ebebeb; font-family: 'Roboto Mono'">
+            {{ timeNow | date : "mm" }}
+          </h5>
           <p style="text-align: center; text-transform: uppercase">Min</p>
         </div>
         <h5 style="color: #ff9000; font-weight: 700">:</h5>
         <div>
-          <h5 style="background-color: #ebebeb">{{ timeNow | date : "ss" }}</h5>
+          <h5 style="background-color: #ebebeb; font-family: 'Roboto Mono'">
+            {{ timeNow | date : "ss" }}
+          </h5>
           <p style="text-align: center; text-transform: uppercase">Sec</p>
         </div>
       </div>
-      <button class="brand-btn">Deliver Your Order</button>
+      <button class="brand-btn" (click)="dragImage()">
+        Deliver Your Order
+      </button>
     </div>
   </main>
 </div>
+<h4
+  style="
+    font-family: 'Open Sans';
+    text-align: center;
+    padding: 35px;
+    background-color: black;
+    color: white;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 0px !important;
+  "
+>
+  Quick Response
+</h4>
+<iframe
+  src="https://www.editpad.org/"
+  style="width: -webkit-fill-available;height: 350px;"
+></iframe>
 <app-footer></app-footer>

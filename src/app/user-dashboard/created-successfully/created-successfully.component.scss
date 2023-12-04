@@ -1,0 +1,21 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brand-btn {
+  background-color: #ff9000;
+  color: #fff;
+  border: 1px solid #ff9000;
+  text-decoration: #fff underline;
+  padding: 12px 30px;
+  font-weight: 500;
+  height: max-content;
+}
+
+.brand-btn:hover {
+  background-color: #fff;
+  color: #ff9000;
+  text-decoration: #ff9000 underline;
+}
