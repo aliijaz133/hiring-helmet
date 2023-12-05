@@ -14,7 +14,7 @@
   display: grid;
   grid-gap: var(--dl-space-space-unit);
   max-width: var(--dl-size-size-maxwidth);
-  align-items: flex-start;
+  align-items: center;
   padding-top: var(--dl-space-space-twounits);
   padding-left: var(--dl-space-space-threeunits);
   padding-right: var(--dl-space-space-threeunits);
@@ -31,7 +31,7 @@
   opacity: 1;
   grid-area: a;
   transition: 0.3s;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   background-size: cover;
   border-radius: 20px;
@@ -46,12 +46,13 @@
   height: 100%;
   display: flex;
   padding: var(--dl-space-space-unit);
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
+   opacity: 0;
 }
 .home-text {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 .home-text01 {
@@ -65,7 +66,7 @@
   display: flex;
   grid-area: b;
   transition: 0.3s;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   background-size: cover;
   border-radius: 20px;
@@ -80,12 +81,13 @@
   height: 100%;
   display: flex;
   padding: var(--dl-space-space-unit);
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
+   opacity: 0;
 }
 .home-text03 {
  color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 .home-text04 {
@@ -99,7 +101,7 @@
   display: flex;
   grid-area: c;
   transition: 0.3s;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   background-size: cover;
   border-radius: 20px;
@@ -114,12 +116,13 @@
   height: 100%;
   display: flex;
   padding: var(--dl-space-space-twounits);
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
+   opacity: 0;
 }
 .home-text06 {
 color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 .home-text07 {
@@ -133,7 +136,7 @@ color: white;
   display: flex;
   grid-area: d;
   transition: 0.3s;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   background-size: cover;
   border-radius: 20px;
@@ -148,12 +151,13 @@ color: white;
   height: 100%;
   display: flex;
   padding: var(--dl-space-space-unit);
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
+  opacity: 0;
 }
 .home-text09 {
 color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 .home-text10 {
@@ -167,7 +171,7 @@ color: white;
   display: flex;
   grid-area: e;
   transition: 0.3s;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   background-size: cover;
   border-radius: 20px;
@@ -184,10 +188,11 @@ color: white;
   padding: var(--dl-space-space-unit);
   align-items: flex-start;
   flex-direction: column;
+   opacity: 0;
 }
 .home-text12 {
 color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 .home-text13 {
@@ -201,7 +206,7 @@ color: white;
   display: flex;
   grid-area: f;
   transition: 0.3s;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   background-size: cover;
   border-radius: 20px;
@@ -216,12 +221,13 @@ color: white;
   height: 100%;
   display: flex;
   padding: var(--dl-space-space-unit);
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
+   opacity: 0;
 }
 .home-text15 {
 color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 .home-text16 {
