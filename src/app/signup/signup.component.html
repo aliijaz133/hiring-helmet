@@ -41,28 +41,28 @@
         style="width: 100%; height: auto"
       />
     </div>
-    <form>
+    <form [formGroup]="userSignup" (ngSubmit)="signUp()">
       <div class="name-email">
         <div class="name-email__container">
           <mat-form-field appearance="outline">
             <mat-label>Username</mat-label>
-            <input matInput type="text" />
+            <input matInput type="text" formControlName="userName"/>
           </mat-form-field>
 
           <mat-form-field appearance="outline">
             <mat-label>Email Address</mat-label>
-            <input matInput type="text" />
+            <input matInput type="text" formControlName="userEmail"/>
           </mat-form-field>
         </div>
         <div class="password-container">
           <mat-form-field appearance="outline">
             <mat-label>Password</mat-label>
-            <input matInput type="password" />
+            <input matInput type="password" formControlName="userPwd"/>
           </mat-form-field>
 
           <mat-form-field appearance="outline">
             <mat-label>Confirm Password</mat-label>
-            <input matInput type="password" />
+            <input matInput type="password" formControlName="userPwdConfirm" />
           </mat-form-field>
         </div>
       </div>
@@ -93,7 +93,7 @@
           </p>
         </div>
       </div>
-      <button class="signup-btn">Sign Up</button>
+      <button class="signup-btn" type="submit" [disabled]="userSignup.invalid">Sign Up</button>
       <p style="margin-top: 20px; margin-bottom: 20px">
         Already have an account?
         <span
