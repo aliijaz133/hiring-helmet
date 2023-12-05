@@ -7,7 +7,7 @@ nav {
 }
 
 .nav-link:hover {
-  color: #0000ff !important;
+  color: #ff9000 !important;
   border-bottom: 2px solid #ff9000;
 }
 
@@ -16,6 +16,7 @@ nav {
 }
 
 .active {
+  color: #ff9000;
   font-weight: 500;
   border-bottom: 2px solid #ff9000;
 }
