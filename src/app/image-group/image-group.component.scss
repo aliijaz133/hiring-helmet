@@ -37,6 +37,7 @@
   border-radius: 20px;
   background-image: url("../../assets/image/image\ 12.png");
   background-position: center;
+  cursor: pointer;
 }
 .home-container01:hover {
   transform: scale(0.98);
@@ -48,7 +49,7 @@
   padding: var(--dl-space-space-unit);
   align-items: center;
   flex-direction: column;
-   opacity: 0;
+  opacity: 0;
 }
 .home-text {
   color: white;
@@ -72,6 +73,7 @@
   border-radius: 20px;
   background-image: url("../../assets/image/image\ 8.png");
   background-position: center;
+  cursor: pointer;
 }
 .home-container03:hover {
   transform: scale(0.98);
@@ -83,10 +85,10 @@
   padding: var(--dl-space-space-unit);
   align-items: center;
   flex-direction: column;
-   opacity: 0;
+  opacity: 0;
 }
 .home-text03 {
- color: white;
+  color: white;
   font-size: 1rem;
   font-weight: 600;
 }
@@ -107,6 +109,7 @@
   border-radius: 20px;
   background-image: url("../../assets/image/image\ 14.png");
   background-position: center;
+  cursor: pointer;
 }
 .home-container05:hover {
   transform: scale(0.98);
@@ -118,15 +121,15 @@
   padding: var(--dl-space-space-twounits);
   align-items: center;
   flex-direction: column;
-   opacity: 0;
+  opacity: 0;
 }
 .home-text06 {
-color: white;
+  color: white;
   font-size: 1rem;
   font-weight: 600;
 }
 .home-text07 {
-color: white;
+  color: white;
   margin-top: var(--dl-space-space-halfunit);
 }
 .home-container07 {
@@ -142,6 +145,7 @@ color: white;
   border-radius: 20px;
   background-image: url("../../assets/image/image\ 6.png");
   background-position: center;
+  cursor: pointer;
 }
 .home-container07:hover {
   transform: scale(0.98);
@@ -156,12 +160,12 @@ color: white;
   opacity: 0;
 }
 .home-text09 {
-color: white;
+  color: white;
   font-size: 1rem;
   font-weight: 600;
 }
 .home-text10 {
-color: white;
+  color: white;
   margin-top: var(--dl-space-space-halfunit);
 }
 .home-container09 {
@@ -177,6 +181,7 @@ color: white;
   border-radius: 20px;
   background-image: url("../../assets/image/image\ 13.png");
   background-position: center;
+  cursor: pointer;
 }
 .home-container09:hover {
   transform: scale(0.98);
@@ -186,17 +191,17 @@ color: white;
   height: 100%;
   display: flex;
   padding: var(--dl-space-space-unit);
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
-   opacity: 0;
+  opacity: 0;
 }
 .home-text12 {
-color: white;
+  color: white;
   font-size: 1rem;
   font-weight: 600;
 }
 .home-text13 {
-color: white;
+  color: white;
   margin-top: var(--dl-space-space-halfunit);
 }
 .home-container11 {
@@ -212,6 +217,7 @@ color: white;
   border-radius: 20px;
   background-image: url("../../assets/image/image\ 15.png");
   background-position: center;
+  cursor: pointer;
 }
 .home-container11:hover {
   transform: scale(0.98);
@@ -223,15 +229,15 @@ color: white;
   padding: var(--dl-space-space-unit);
   align-items: center;
   flex-direction: column;
-   opacity: 0;
+  opacity: 0;
 }
 .home-text15 {
-color: white;
+  color: white;
   font-size: 1rem;
   font-weight: 600;
 }
 .home-text16 {
-color: white;
+  color: white;
   margin-top: var(--dl-space-space-halfunit);
 }
 @media (max-width: 991px) {
@@ -239,7 +245,6 @@ color: white;
     grid-gap: var(--dl-space-space-unit);
   }
   .home-text {
-    
     text-align: center;
   }
   .home-text01 {
@@ -291,8 +296,6 @@ color: white;
   }
 }
 
-
-
 /* Add the following styles for the text overlay */
 .home-container01:hover .home-container02,
 .home-container03:hover .home-container04,
@@ -300,11 +303,15 @@ color: white;
 .home-container07:hover .home-container08,
 .home-container09:hover .home-container10,
 .home-container11:hover .home-container12 {
-  background-color: rgba(0, 0, 0, 0.521); /* Set the background color with 50% opacity */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.521
+  ); /* Set the background color with 50% opacity */
   border-radius: 20px;
   color: #ffffff00;
 }
-
 
 /* Adjust the opacity and position of the text overlay on hover */
 .home-container01:hover .home-container02,
@@ -329,9 +336,9 @@ color: white;
 }
 
 .home-container02 {
-    color: #ffffff00;
+  color: #ffffff00;
 }
 
 .home-container02:hover {
-    color: #fff;
+  color: #fff;
 }
