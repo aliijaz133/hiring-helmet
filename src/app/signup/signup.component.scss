@@ -350,15 +350,15 @@ main {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 80%; /* Adjust the width as needed */
-  max-width: 600px; /* Set a maximum width if desired */
-  margin: 0 auto; /* Center the container */
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .find-brand {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  flex-wrap: wrap;
 }
 
 mat-form-field {
@@ -366,43 +366,43 @@ mat-form-field {
 }
 
 .signup-btn {
-  width: 100%; /* Make buttons full width */
+  width: 100%;
 }
 
 .social-app {
   display: flex;
   justify-content: center;
-  gap: 10px; /* Adjust the gap between social icons */
+  gap: 10px;
 }
 
 .name-email__container,
 .password-container {
-  flex-direction: column; /* Stack input fields on top of each other */
+  flex-direction: column;
 }
 
 .captcha-container {
-  flex-direction: column; /* Stack captcha elements on top of each other */
-  align-items: flex-start; /* Align elements to the start */
+  flex-direction: row;
+  align-items: flex-start;
 }
 
 @media screen and (min-width: 600px) {
-  /* Apply styles for screens with a minimum width of 600px */
+ 
   .main-container {
-    width: 60%; /* Adjust the width for larger screens */
+    width: 60%;
   }
 
   .find-brand {
-    flex-wrap: nowrap; /* Prevent buttons from wrapping */
+    flex-wrap: nowrap;
   }
 
   .name-email__container,
   .password-container {
-    flex-direction: row; /* Place input fields side by side */
+    flex-direction: row;
   }
 
   .captcha-container {
-    flex-direction: row; /* Place captcha elements side by side */
-    align-items: baseline; /* Align elements to the baseline */
+    flex-direction: row;
+    align-items: baseline;
   }
 }
 
