@@ -1,7 +1,17 @@
 <app-header></app-header>
 <main>
   <div class="main-container">
-    <h2 style="text-align: center; margin-top: 20px;font-family: 'Open Sans';font-size: 36px;font-weight: 700;">Get Started for Free!</h2>
+    <h2
+      style="
+        text-align: center;
+        margin-top: 20px;
+        font-family: 'Open Sans';
+        font-size: 36px;
+        font-weight: 700;
+      "
+    >
+      Get Started for Free!
+    </h2>
     <div class="find-brand">
       <button class="find-btn">Find Architect</button>
       <button class="brand-btn">Become Brand</button>
@@ -57,10 +67,10 @@
         </div>
       </div>
       <div class="captcha-container">
-        <label class="cont">
-          <input type="checkbox" checked="" />
-          <span></span>
-        </label>
+        <div class="checkbox-wrapper-19">
+          <input id="cbtest-19" type="checkbox" />
+          <label class="check-box" for="cbtest-19"> </label>
+        </div>
         <p>I'm not a robot.</p>
         <img
           src=".././../assets/image/recaptcha-icon.png"
@@ -82,7 +92,11 @@
       <button class="signup-btn">Sign Up</button>
       <p style="margin-top: 20px; margin-bottom: 20px">
         Already have an account?
-        <span style="color: #ff9000; font-size: medium;cursor: pointer;" (click)="loginPage()">Log In</span>
+        <span
+          style="color: #ff9000; font-size: medium; cursor: pointer"
+          (click)="loginPage()"
+          >Log In</span
+        >
       </p>
     </form>
   </div>
