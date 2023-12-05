@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PaymentPortalComponent } from './payment-portal.component';
+import { LoaderGifComponent } from './loader-gif.component';
 
-describe('PaymentPortalComponent', () => {
-  let component: PaymentPortalComponent;
-  let fixture: ComponentFixture<PaymentPortalComponent>;
+describe('LoaderGifComponent', () => {
+  let component: LoaderGifComponent;
+  let fixture: ComponentFixture<LoaderGifComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PaymentPortalComponent ]
+      declarations: [ LoaderGifComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PaymentPortalComponent);
+    fixture = TestBed.createComponent(LoaderGifComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

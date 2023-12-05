@@ -22,10 +22,18 @@ export class UserProfileComponent implements OnInit {
 
   @ViewChild('lineChart', { static: true }) lineChart!: ElementRef;
 
+  showLoader:boolean = false;
+
   constructor() {}
 
   ngOnInit(): void {
     this.chartGraph();
+
+    this.showLoader = true;
+
+    setTimeout(()=>{
+      this.showLoader = false;
+    },1000)
   }
 
   chartGraph() {

@@ -13,6 +13,7 @@
               cursor: pointer;
               margin-right: 10px;
             "
+            (click)="backtoOrder()"
             >chevron_left</mat-icon
           >
           <div style="display: flex; flex-direction: column; gap: 20px">
@@ -86,7 +87,7 @@
           >
             $15,0000
           </h2>
-          <div style="display: flex; gap: 10px">
+          <div style="display: flex; gap: 10px;align-items: center;">
             <p style="font-family: 'Open Sans'; font-size: 16px">Status</p>
             <p
               style="
@@ -161,3 +162,4 @@
   style="width: -webkit-fill-available;height: 350px;"
 ></iframe>
 <app-footer></app-footer>
+<app-loader-gif *ngIf="showLoader"></app-loader-gif>
