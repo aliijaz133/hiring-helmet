@@ -5,6 +5,8 @@ main {
   gap: 20px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+  width: -webkit-fill-available;
+  width: -moz-available;
 }
 
 .main-container {
@@ -20,9 +22,9 @@ app-sidebar {
 }
 
 mat-tab-group {
-    border: 2px solid #a1a1a1;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+  border: 2px solid #a1a1a1;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .one-time__btn {
