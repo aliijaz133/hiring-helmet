@@ -25,6 +25,7 @@
   display: flex;
   justify-content: space-evenly;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .picture-side_bar {
@@ -63,10 +64,10 @@ section {
 }
 
 .text-capitalize {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 2rem;
-    margin-top: 20px;
-    margin-bottom: 50px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 main {
