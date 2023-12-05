@@ -13,6 +13,7 @@ export interface ExampleTab {
   styleUrls: ['./orders.component.scss'],
 })
 export class OrdersComponent implements OnInit {
+  showLoader: boolean = false;
   asyncTabs: Observable<ExampleTab[]>;
 
   activeTabIndex: number = 0; // Set the default active tab index
@@ -34,7 +35,13 @@ export class OrdersComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.showLoader = true;
+
+    setTimeout(() => {
+      this.showLoader = false;
+    },1000);
+  }
 
   trackTab(index: number, item: ExampleTab): string {
     // Return a unique identifier for the item

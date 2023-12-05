@@ -7,9 +7,16 @@ import { CreditCardComponent } from '../credit-card/credit-card.component';
   styleUrls: ['./payment.component.scss'],
 })
 export class PaymentComponent implements OnInit {
+  showLoader: boolean = false;
   constructor(private dialog: MatDialog) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.showLoader = true;
+
+    setTimeout(() => {
+      this.showLoader = false;
+    }, 1000);
+  }
 
   openDialog() {
     this.dialog.open(CreditCardComponent);

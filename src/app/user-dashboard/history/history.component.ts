@@ -14,6 +14,7 @@ interface UserDetail {
   styleUrls: ['./history.component.scss'],
 })
 export class HistoryComponent implements OnInit {
+  showLoader:boolean = false;
   userDetail: UserDetail[] = [
     {
       image: '../../../assets/image/Ellipse 8.png',
@@ -54,5 +55,11 @@ export class HistoryComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.showLoader = true;
+
+    setTimeout(()=>{
+      this.showLoader = false;
+    },1000)
+  }
 }

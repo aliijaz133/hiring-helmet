@@ -11,6 +11,7 @@ interface Services {
   styleUrls: ['./create-order.component.scss'],
 })
 export class CreateOrderComponent implements OnInit {
+  showLoader: boolean = false;
   services: Services[] = [
     {
       value: 'Solution Architecture Design',
@@ -32,7 +33,13 @@ export class CreateOrderComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.showLoader = true;
+
+    setTimeout(() => {
+      this.showLoader = false;
+    },1000);
+  }
 
   toogleDelivery() {
     this.showDeliverybox = !this.showDeliverybox;
