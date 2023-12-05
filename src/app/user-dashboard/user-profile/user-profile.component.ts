@@ -2,6 +2,12 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import * as am4core from '@amcharts/amcharts4/core';
 import * as am4charts from '@amcharts/amcharts4/charts';
 import am4themes_animated from '@amcharts/amcharts4/themes/animated';
+import {
+  FormBuilder,
+  FormControl,
+  FormGroup,
+  Validators,
+} from '@angular/forms';
 
 am4core.useTheme(am4themes_animated);
 interface Gender {
@@ -22,18 +28,32 @@ export class UserProfileComponent implements OnInit {
 
   @ViewChild('lineChart', { static: true }) lineChart!: ElementRef;
 
-  showLoader:boolean = false;
+  showLoader: boolean = false;
 
-  constructor() {}
+  userProfile: FormGroup;
+
+  constructor(private fb: FormBuilder) {
+    this.userProfile = this.fb.group({
+      userFName: new FormControl('', [Validators.required]),
+      userLName: new FormControl('', [Validators.required]),
+      userContact: new FormControl('', [Validators.required]),
+      userEmail: new FormControl('', [Validators.required, Validators.email]),
+      userGender: new FormControl('', [Validators.required]),
+    });
+  }
 
   ngOnInit(): void {
     this.chartGraph();
 
     this.showLoader = true;
 
-    setTimeout(()=>{
+    setTimeout(() => {
       this.showLoader = false;
-    },1000)
+    }, 1000);
+  }
+
+  userData() {
+    console.log('User Data: ', this.userProfile.value);
   }
 
   chartGraph() {
