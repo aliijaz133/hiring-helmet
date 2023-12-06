@@ -29,24 +29,28 @@
         style="width: 100%; height: auto"
       />
     </div>
-    <form>
+    <form [formGroup]="userLogin" (ngSubmit)="loggedIn()">
       <div class="name-email">
         <mat-form-field appearance="outline">
           <mat-label>Username</mat-label>
-          <input matInput type="text" />
+          <input matInput type="email" formControlName="userEmail" />
         </mat-form-field>
 
         <mat-form-field appearance="outline">
           <mat-label>Password</mat-label>
-          <input matInput type="password" />
+          <input matInput type="password" formControlName="userPwd" />
         </mat-form-field>
 
-        <button class="signup-btn" mat-button (click)="loggedIn()">Login</button>
+        <button type="submit" class="signup-btn" mat-button>Login</button>
       </div>
 
       <p style="margin-top: 20px; margin-bottom: 20px">
         New to TIG
-        <span style="color: #ff9000; font-size: medium;cursor: pointer;" (click)="signupPage()">Sign Up</span>
+        <span
+          style="color: #ff9000; font-size: medium; cursor: pointer"
+          (click)="signupPage()"
+          >Sign Up</span
+        >
       </p>
       <span
         style="color: #000000; font-size: medium; text-decoration: underline"

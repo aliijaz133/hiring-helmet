@@ -6,6 +6,7 @@ import { LoginComponent } from './login/login.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { InteriorDesignComponent } from './interior-design/interior-design.component';
+import { AuthGuardService } from './service/auth-guard.service';
 
 const routes: Routes = [
   {
@@ -43,6 +44,7 @@ const routes: Routes = [
       import('./user-dashboard/user-dashboard.module').then(
         (u) => u.UserDashboardModule
       ),
+    canActivate: [AuthGuardService],
   },
   {
     path: '**',
