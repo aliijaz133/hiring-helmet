@@ -22,3 +22,20 @@ a {
 mat-form-field {
   width: 250px;
 }
+
+.cookie-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 85px;
+}
+
+@media (max-width: 760px) {
+  .cookie-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 85px;
+    justify-content: center;
+  }
+}
