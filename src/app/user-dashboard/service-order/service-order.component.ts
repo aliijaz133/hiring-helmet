@@ -12,6 +12,8 @@ export class ServiceOrderComponent implements OnInit {
   showLoader: boolean = false;
   timeNow?: number;
 
+  text: string | undefined;
+
   constructor(private dialog: MatDialog, private router: Router) {
     setInterval(() => {
       this.timeNow = Date.now();
@@ -19,9 +21,9 @@ export class ServiceOrderComponent implements OnInit {
 
     this.showLoader = true;
 
-    setTimeout(()=> {
+    setTimeout(() => {
       this.showLoader = false;
-    },1000)
+    }, 1000);
   }
 
   ngOnInit(): void {}

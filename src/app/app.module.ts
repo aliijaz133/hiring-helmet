@@ -26,6 +26,7 @@ import { WhyUsComponent } from './why-us/why-us.component';
 import { ImageGroupComponent } from './image-group/image-group.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { InteriorDesignComponent } from './interior-design/interior-design.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { InteriorDesignComponent } from './interior-design/interior-design.compo
     HttpClientModule,
     MatChipsModule,
     HttpClientModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

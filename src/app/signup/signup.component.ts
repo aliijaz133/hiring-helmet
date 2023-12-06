@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 import {
   FormBuilder,
@@ -28,7 +29,8 @@ export class SignupComponent implements OnInit {
   constructor(
     private router: Router,
     private fb: FormBuilder,
-    private http: HttpClient
+    private http: HttpClient,
+    private toastr: MatSnackBar
   ) {
     this.userSignup = this.fb.group({
       userName: new FormControl('', [Validators.required]),
@@ -69,6 +71,9 @@ export class SignupComponent implements OnInit {
       this.userSignup.reset();
     } else {
       console.log('Password should be matching.');
+      this.toastr.open('Your password should be matched', '', {
+        duration: 2000,
+      });
     }
   }
 }
