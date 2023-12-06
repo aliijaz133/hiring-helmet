@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
 import {
   FormBuilder,
   FormControl,
@@ -6,6 +8,12 @@ import {
   Validators,
 } from '@angular/forms';
 import { Router } from '@angular/router';
+
+interface User {
+  userName: string;
+  userEmail: string;
+  userPwd: string;
+}
 
 @Component({
   selector: 'app-signup',
@@ -17,7 +25,11 @@ export class SignupComponent implements OnInit {
 
   userSignup: FormGroup;
 
-  constructor(private router: Router, private fb: FormBuilder) {
+  constructor(
+    private router: Router,
+    private fb: FormBuilder,
+    private http: HttpClient
+  ) {
     this.userSignup = this.fb.group({
       userName: new FormControl('', [Validators.required]),
       userEmail: new FormControl('', [Validators.required, Validators.email]),
@@ -39,8 +51,24 @@ export class SignupComponent implements OnInit {
   }
 
   signUp() {
-    console.log('User Data: ', this.userSignup.value);
+    const fPwd = this.userSignup.get('userPwd')?.value;
+    const sPwd = this.userSignup.get('userPwdConfirm')?.value;
 
-    this.userSignup.reset();
+    if (fPwd === sPwd) {
+      const userdata: User = this.userSignup.value;
+
+      this.http.post('http://localhost:3000/api/signup', userdata).subscribe(
+        (response) => {
+          console.log('This user data is successfully submitted.');
+        },
+        (error) => {
+          console.error('Server error:', error);
+        }
+      );
+
+      this.userSignup.reset();
+    } else {
+      console.log('Password should be matching.');
+    }
   }
 }

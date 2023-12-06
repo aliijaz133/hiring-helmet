@@ -58,6 +58,7 @@ import { InteriorDesignComponent } from './interior-design/interior-design.compo
     MatButtonModule,
     HttpClientModule,
     MatChipsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
