@@ -62,6 +62,10 @@ export class SignupComponent implements OnInit {
       this.http.post('http://localhost:3000/api/signup', userdata).subscribe(
         (response) => {
           console.log('This user data is successfully submitted.');
+          this.toastr.open('Successfully Registered', '✅', {
+            duration: 2000,
+          });
+          this.router.navigate(['/login']);
         },
         (error) => {
           console.error('Server error:', error);
