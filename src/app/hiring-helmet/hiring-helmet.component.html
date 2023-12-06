@@ -24,7 +24,7 @@
       />
       <input class="button--submit" value="Search" type="submit" />
     </div>
-    <div class="mat-chip__container">
+    <div class="mat-chip__container" style="width: 500px">
       <mat-chip-list #chipGrid class="mat-chip">
         <mat-chip *ngFor="let fruit of fruits" (removed)="remove(fruit)">
           {{ fruit.name }}
@@ -71,7 +71,9 @@
   <div class="picture-side_bar">
     <div class="side-bar">
       <ul>
-        <li class="categ-link" (click)="categories()">&nbsp;&nbsp;All Categories</li>
+        <li class="categ-link" (click)="categories()">
+          &nbsp;&nbsp;All Categories
+        </li>
         <li class="categ-link">&nbsp;&nbsp;Solution Architecture Design</li>
         <li class="categ-link">&nbsp;&nbsp;AWS Arch slide</li>
         <li class="categ-link">&nbsp;&nbsp;Autodesk 3ds Max</li>
@@ -108,7 +110,7 @@
       About Us
     </h1>
     <div class="input-group2">
-      <p style="width: 300px; margin-left: 203px" class="about-desc">
+      <p style="width: 500px; margin-left: 203px" class="about-desc">
         Amet eu facilisi posuere ut at cras non ipsum proin nunc purus tellus
         ultricies velit elementum ut dui sed augue ultrices phasellus
         <span
@@ -137,7 +139,6 @@
       <br />
       <button class="brand-btn">Read More</button>
     </div>
-    <div class="mat-chip__container"></div>
   </div>
 </div>
 <section>
@@ -149,38 +150,81 @@
         class="work-image"
       />
     </div>
-    <div style="display: flex; flex-direction: column; gap: 20px; width: 600px">
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 600px;
+        font-family: 'Playfair Display';
+      "
+    >
       <h1
         class="h1-online-eng__title"
         style="
-          font-family: 'Times New Roman', Times, serif;
-          font-size: 4rem;
+          font-family: 'Playfair Display';
+          font-size: 48px;
           text-align: left;
-          margin-top: 30px;
           line-height: normal;
         "
       >
         How It Works
       </h1>
       <div style="display: flex; justify-content: flex-start; gap: 20px">
-        <h5 style="font-weight: bold">01</h5>
+        <h5
+          style="
+            font-weight: bold;
+            font-size: 18px;
+            font-family: 'Playfair Display';
+            font-weight: 600;
+          "
+        >
+          01
+        </h5>
         <div
           style="display: flex; flex-direction: column; align-items: flex-start"
         >
-          <h5 style="font-weight: bold">Sign Up</h5>
-          <p>
+          <h5
+            style="
+              font-weight: bold;
+              font-size: 18px;
+              font-family: 'Playfair Display';
+              font-weight: 600;
+            "
+          >
+            Sign Up
+          </h5>
+          <p style="font-family: 'Inter'; font-size: 16px; font-weight: 400">
             Join as a Brand or Join as an Influencer and enjoy the benefits of
             quickly collaborating on top projects.
           </p>
         </div>
       </div>
       <div style="display: flex; justify-content: flex-start; gap: 20px">
-        <h5 style="font-weight: bold">02</h5>
+        <h5
+          style="
+            font-weight: bold;
+            font-size: 18px;
+            font-family: 'Playfair Display';
+            font-weight: 600;
+          "
+        >
+          02
+        </h5>
         <div
           style="display: flex; flex-direction: column; align-items: flex-start"
         >
-          <h5 style="font-weight: bold">Create Profile</h5>
-          <p>
+          <h5
+            style="
+              font-weight: bold;
+              font-size: 18px;
+              font-family: 'Playfair Display';
+              font-weight: 600;
+            "
+          >
+            Create Profile
+          </h5>
+          <p style="font-family: 'Inter'; font-size: 16px; font-weight: 400">
             Follow the easy steps after you sign up to create a unique profile
             that will attract our Brands and Influencers to what you have to
             offer!
@@ -188,12 +232,30 @@
         </div>
       </div>
       <div style="display: flex; justify-content: flex-start; gap: 20px">
-        <h5 style="font-weight: bold">03</h5>
+        <h5
+          style="
+            font-weight: bold;
+            font-size: 18px;
+            font-family: 'Playfair Display';
+            font-weight: 600;
+          "
+        >
+          03
+        </h5>
         <div
           style="display: flex; flex-direction: column; align-items: flex-start"
         >
-          <h5 style="font-weight: bold">For Seller</h5>
-          <p>
+          <h5
+            style="
+              font-weight: bold;
+              font-size: 18px;
+              font-family: 'Playfair Display';
+              font-weight: 600;
+            "
+          >
+            For Seller
+          </h5>
+          <p style="font-family: 'Inter'; font-size: 16px; font-weight: 400">
             Your next step is to start searching our Influencer database for
             your perfect Influencer, and start posting jobs! There are so many
             ways we make sure your campaign is a massive success inside our
@@ -203,12 +265,30 @@
         </div>
       </div>
       <div style="display: flex; justify-content: flex-start; gap: 20px">
-        <h5 style="font-weight: bold">04</h5>
+        <h5
+          style="
+            font-weight: bold;
+            font-size: 18px;
+            font-family: 'Playfair Display';
+            font-weight: 600;
+          "
+        >
+          04
+        </h5>
         <div
           style="display: flex; flex-direction: column; align-items: flex-start"
         >
-          <h5 style="font-weight: bold">For Buyer</h5>
-          <p>
+          <h5
+            style="
+              font-weight: bold;
+              font-size: 18px;
+              font-family: 'Playfair Display';
+              font-weight: 600;
+            "
+          >
+            For Buyer
+          </h5>
+          <p style="font-family: 'Inter'; font-size: 16px; font-weight: 400">
             Your next step is to complete your profile as much as possible!
             Answer all of the questions, create a captivating unique Bio,
             highlight your following and your successes, upload an Intro video
@@ -238,8 +318,8 @@
         width: 400px;
       "
     >
-      <h2>Our Client</h2>
-      <p>
+      <h2 style="font-family: 'Playfair Display';font-weight: 400;font-size: 36px;">Our Client</h2>
+      <p style="font-size: 12px;font-weight: 400;font-family: 'Inter';">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
         provident quas perferendis ex. Perspiciatis eos vero, quam totam dolor
         amet perferendis soluta deserunt et enim. Quam odit officia nulla optio.

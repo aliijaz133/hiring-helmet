@@ -3,8 +3,8 @@
   // background-color: #c4c4c4;
   height: 50vh;
   width: 100%;
-  background-size:cover;
-  padding-bottom: 20px;
+  background-size: cover;
+  padding-bottom: 500px;
   background-position: top;
   background-repeat: no-repeat;
 }
@@ -139,24 +139,28 @@
   background-image: url(".././../assets/image/about_us-img.png");
   height: 50vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .about-us__title {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  top: 20%;
-  left: 20%;
-  color: #fff;
-  width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    position: relative;
+    top: 20%;
+    /* left: 20%; */
+    color: #fff;
+    width: -moz-fit-content;
+    width: fit-content;
 }
 
 .input-group2 {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: baseline;
   flex-wrap: nowrap;
 }
 
@@ -229,10 +233,10 @@ app-why-us {
   }
 
   app-why-us {
-  position: relative;
-  top: 50px;
-  margin-bottom: 50px;
-}
+    position: relative;
+    top: 50px;
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -267,6 +271,12 @@ app-why-us {
     margin-bottom: 20px;
   }
 
+  .mat-chip__container {
+    display: flex;
+    width: 500px;
+    flex-wrap: wrap;
+  }
+
   mat-chip-list {
     display: flex !important;
     flex-direction: column !important;
@@ -281,6 +291,7 @@ app-why-us {
   .client-images__container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
   }
 }
@@ -369,8 +380,16 @@ app-why-us {
   }
 }
 
-@media (min-width:550px) {
+@media (min-width: 550px) {
   .input {
     max-width: 400px !important;
+  }
+}
+
+@media (max-width: 520) {
+  .mat-chip__container {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    width: fit-content !important;
   }
 }
