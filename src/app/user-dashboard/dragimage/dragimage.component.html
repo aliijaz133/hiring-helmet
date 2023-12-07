@@ -59,13 +59,14 @@
     <div class="icon">
       <img
         *ngIf="!deliverOrder.get('deliveryImage')?.value"
-        src="../../../assets/image/Vector.png"
+        [src]="imageUrl"
         alt=""
       />
       <img
         *ngIf="deliverOrder.get('deliveryImage')?.value"
         [src]="imageUrl"
         alt="Uploaded Image"
+        width="30%"
       />
     </div>
     <div class="text">
