@@ -29,8 +29,8 @@ export class LoginComponent implements OnInit {
     private http: HttpClient
   ) {
     this.userLogin = this.fb.group({
-      userEmail: new FormControl('', [Validators.required]),
-      userPwd: new FormControl('', [Validators.required, Validators.email]),
+      userEmail: new FormControl('', [Validators.required, Validators.email]),
+      userPwd: new FormControl('', [Validators.required]),
     });
   }
 
@@ -50,8 +50,6 @@ export class LoginComponent implements OnInit {
     this.user.userEmail = this.userLogin.value.userEmail;
     this.user.userPwd = this.userLogin.value.userPwd;
 
-    // console.log('User login:', this.user);
-
     this.http.post('http://localhost:3000/api/login', this.user).subscribe(
       (response: any) => {
         console.log('Server response:', response);
@@ -66,11 +64,9 @@ export class LoginComponent implements OnInit {
         console.error('Server error:', error);
 
         if (error.status === 401) {
-          // this.toastr.error('Invalid email or password');
           console.log('Invalid email or password');
-        } else {
-          // this.toastr.error('Login failed. Please try again.');
-          console.log('Invalid email or password');
+        } else if (error.status === 505) {
+          console.warn('CORS Error');
         }
       }
     );

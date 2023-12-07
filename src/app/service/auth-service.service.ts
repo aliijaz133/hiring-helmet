@@ -11,7 +11,7 @@ export class AuthServiceService {
 
   private baseUrl = 'http://localhost:3000/api';
 
-  signIn = ['/signin'];
+  signIn = ['/login'];
 
   constructor(private router: Router, private http: HttpClient) {}
 
