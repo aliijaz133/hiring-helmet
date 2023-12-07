@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthServiceService } from '../service/auth-service.service';
 
 @Component({
   selector: 'app-header',
@@ -9,12 +10,28 @@ import { Router } from '@angular/router';
 export class HeaderComponent implements OnInit {
   logo = '.././../assets/image/asd 1.png';
 
-  constructor(private router: Router) {}
+  isLoggedIn: boolean = false;
 
-  ngOnInit(): void {}
+  constructor(
+    private router: Router,
+    private authService: AuthServiceService
+  ) {}
+
+  ngOnInit(): void {
+    this.isLoggedIn = this.authService.isLoggedIn();
+  }
 
   loginPage() {
     this.router.navigate(['/login']);
+  }
+
+  loginOrLogout() {
+    if (this.isLoggedIn) {
+      this.authService.logout();
+      this.isLoggedIn = false;
+    } else {
+      this.router.navigate(['/login']);
+    }
   }
 
   signupPage() {

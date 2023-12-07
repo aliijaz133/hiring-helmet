@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthServiceService } from '../service/auth-service.service';
+
 @Component({
   selector: 'app-interior-design',
   templateUrl: './interior-design.component.html',
@@ -7,7 +9,10 @@ import { Router } from '@angular/router';
 })
 export class InteriorDesignComponent implements OnInit {
   showLoader = false;
-  constructor(private router: Router) {}
+  constructor(
+    private router: Router,
+    private authService: AuthServiceService
+  ) {}
 
   ngOnInit(): void {
     this.showLoader = true;
@@ -18,6 +23,11 @@ export class InteriorDesignComponent implements OnInit {
   }
 
   loginPage() {
-    this.router.navigate(['/login']);
+    const logedIn = this.authService.isLoggedIn();
+    if (!logedIn) {
+      this.router.navigate(['/login']);
+    } else {
+      this.router.navigate(['/user-dashboard/orders']);
+    }
   }
 }

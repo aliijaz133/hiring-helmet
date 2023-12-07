@@ -26,7 +26,7 @@
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Become Seller</a>
+          <a class="nav-link" routerLink="/user-dashboard/home" routerLinkActive="active" *ngIf="isLoggedIn">Become Seller</a>
         </li>
         <li class="nav-item">
           <a
@@ -48,8 +48,25 @@
           <a class="nav-link" href="#">Pricing</a>
         </li>
       </ul>
-      <button class="login-btn" (click)="loginPage()">Login</button>
-      <button class="register-btn" (click)="signupPage()">Register</button>
+      <!-- Assuming you're using Angular Material's mat-icon -->
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          flex-wrap: nowrap;
+          cursor: pointer;
+        "
+        (click)="loginOrLogout()"
+      >
+        <mat-icon *ngIf="isLoggedIn">power_settings_new</mat-icon>
+        <button class="login-btn">
+          {{ isLoggedIn ? "Logout" : "Login" }}
+        </button>
+      </div>
+
+      <button class="register-btn" *ngIf="!isLoggedIn" (click)="signupPage()">
+        Register
+      </button>
     </div>
   </div>
 </nav>

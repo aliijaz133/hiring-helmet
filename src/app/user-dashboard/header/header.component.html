@@ -48,8 +48,13 @@
           <a class="nav-link" href="#">Pricing</a>
         </li>
       </ul>
-      <button class="login-btn">Login</button>
-      <button class="register-btn">Register</button>
+      <div
+        (click)="userLogout()"
+        style="display: flex; align-items: center; flex-wrap: nowrap; cursor: pointer;"
+      >
+        <mat-icon>power_settings_new</mat-icon>
+        <button class="login-btn">Logout</button>
+      </div>
     </div>
   </div>
 </nav>
