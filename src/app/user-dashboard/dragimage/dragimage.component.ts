@@ -50,8 +50,13 @@ export class DragimageComponent implements OnInit {
         imageSize ? imageSize.size : 'No image selected'
       );
       console.log('Details:', details);
-    }
 
-    this.deliverOrder.reset();
+      this.deliverOrder.reset();
+
+      if (this.fileInput) {
+        this.fileInput.value = '';
+      }
+      this.imageUrl = '../../../assets/image/Vector.png';
+    }
   }
 }
