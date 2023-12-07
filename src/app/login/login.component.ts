@@ -54,7 +54,7 @@ export class LoginComponent implements OnInit {
       (response: any) => {
         console.log('Server response:', response);
 
-        localStorage.setItem('userId', response._id);
+        localStorage.setItem('userId', response.userName);
 
         this.router.navigate(['/user-dashboard/home'], {
           queryParams: { userEmail: this.user.userEmail },
