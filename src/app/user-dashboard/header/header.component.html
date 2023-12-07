@@ -26,7 +26,12 @@
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Become Seller</a>
+          <a
+            class="nav-link"
+            routerLink="/user-dashboard/home"
+            routerLinkActive="active"
+            >Become Seller</a
+          >
         </li>
         <li class="nav-item">
           <a
@@ -50,7 +55,12 @@
       </ul>
       <div
         (click)="userLogout()"
-        style="display: flex; align-items: center; flex-wrap: nowrap; cursor: pointer;"
+        style="
+          display: flex;
+          align-items: center;
+          flex-wrap: nowrap;
+          cursor: pointer;
+        "
       >
         <mat-icon>power_settings_new</mat-icon>
         <button class="login-btn">Logout</button>

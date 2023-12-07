@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 interface PaymentDetail {
   image: string;
@@ -15,7 +16,6 @@ interface PaymentDetail {
   styleUrls: ['./onetimepayment.component.scss'],
 })
 export class OnetimepaymentComponent implements OnInit {
-
   paymentDetail: PaymentDetail[] = [
     {
       image: '../../../assets/image/image 3.png',
@@ -83,7 +83,11 @@ export class OnetimepaymentComponent implements OnInit {
     },
   ];
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
+
+  viewData() {
+    this.router.navigate(['/user-dashboard/service-order/find-order']);
+  }
 }

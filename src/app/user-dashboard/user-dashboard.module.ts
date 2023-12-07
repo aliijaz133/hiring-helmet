@@ -32,6 +32,7 @@ import { CreatedSuccessfullyComponent } from './created-successfully/created-suc
 import { CreateOrderComponent } from './create-order/create-order.component';
 import { MatRadioModule } from '@angular/material/radio';
 import { LoaderGifComponent } from './loader-gif/loader-gif.component';
+import { MatMenuModule } from '@angular/material/menu';
 @NgModule({
   declarations: [
     UserDashboardComponent,
@@ -69,6 +70,7 @@ import { LoaderGifComponent } from './loader-gif/loader-gif.component';
     MatDialogModule,
     MatTabsModule,
     MatRadioModule,
+    MatMenuModule,
   ],
 })
 export class UserDashboardModule {}

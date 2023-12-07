@@ -26,7 +26,8 @@
       <p
         class="user-data"
         [ngStyle]="{
-          'background-color': user.status === 'In Progress' ? '#0c8ed7' : '#d7919d',
+          'background-color':
+            user.status === 'In Progress' ? '#0c8ed7' : '#d7919d',
           'border-radius': '20px',
           color: '#fff',
           padding: '5px'
@@ -35,6 +36,33 @@
         {{ user.status }}
       </p>
     </div>
-    <mat-icon style="cursor: pointer">more_vert</mat-icon>
+    <mat-icon style="cursor: pointer" [matMenuTriggerFor]="menu"
+      >more_vert</mat-icon
+    >
+    <mat-menu #menu="matMenu">
+      <div
+        style="
+          display: flex;
+          flex-wrap: nowrap;
+          align-items: center;
+          cursor: pointer;
+        "
+        (click)="viewData()"
+      >
+        <mat-icon>visibility</mat-icon>
+        <button mat-menu-item>View</button>
+      </div>
+      <div
+        style="
+          display: flex;
+          flex-wrap: nowrap;
+          align-items: center;
+          cursor: pointer;
+        "
+      >
+        <mat-icon>create</mat-icon>
+        <button mat-menu-item>Edit</button>
+      </div>
+    </mat-menu>
   </div>
 </main>
