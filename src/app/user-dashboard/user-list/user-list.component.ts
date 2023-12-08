@@ -9,22 +9,30 @@ import { Component, OnInit } from '@angular/core';
 export class UserListComponent implements OnInit {
   userList: any[] = [];
 
+  showLoader = false;
+
   private url = 'http://localhost:3000/api/user-dashboard/user-list';
 
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
     this.getUsersdata();
+
+    this.showLoader = true;
+
+    setTimeout(() => {
+      this.showLoader = false;
+    }, 2000);
   }
 
-  getUsersdata() {
+  getUsersdata(): void {
     // const userData = this.userList;
 
     this.http.get(this.url).subscribe(
       (response: any) => {
         this.userList = response;
 
-        console.log("User List: ", this.userList);
+        console.log('User List: ', this.userList);
       },
       (error) => {
         console.error('Error fetching user data:', error);
