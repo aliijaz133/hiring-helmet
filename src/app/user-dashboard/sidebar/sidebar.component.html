@@ -1,12 +1,18 @@
 <main>
   <div class="side-container" style="background-color: orange">
     <mat-nav-list>
+      <mat-list-item>
+        <mat-icon>account_circle</mat-icon>
+        <span>{{ userName }}</span>
+      </mat-list-item>
+
       <a routerLink="/user-dashboard/home" routerLinkActive="active">
         <mat-list-item>
           <mat-icon>home</mat-icon>
           <span>Home</span>
         </mat-list-item>
       </a>
+
       <a routerLink="/user-dashboard/my-profile" routerLinkActive="active">
         <mat-list-item>
           <mat-icon>person</mat-icon>
@@ -50,11 +56,6 @@
       <mat-list-item>
         <mat-icon>help</mat-icon>
         <span>Help</span>
-      </mat-list-item>
-
-      <mat-list-item>
-        <mat-icon>settings</mat-icon>
-        <span>Setting{{userName}}</span>
       </mat-list-item>
     </mat-nav-list>
   </div>

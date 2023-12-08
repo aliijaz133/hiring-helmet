@@ -30,7 +30,7 @@ export class AuthServiceService {
     this.router.navigate(this.signIn);
   }
 
-  getLoggedInUserName() {
+  getLoggedInUserName(): string | null {
     return localStorage.getItem(this.USERNAME_STORAGE_KEY);
   }
 }

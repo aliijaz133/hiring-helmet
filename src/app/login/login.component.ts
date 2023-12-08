@@ -1,4 +1,3 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import {
   FormBuilder,
@@ -7,6 +6,8 @@ import {
   Validators,
 } from '@angular/forms';
 import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
+import { AuthServiceService } from '../service/auth-service.service';
 
 @Component({
   selector: 'app-login',
@@ -26,7 +27,8 @@ export class LoginComponent implements OnInit {
   constructor(
     private router: Router,
     private fb: FormBuilder,
-    private http: HttpClient
+    private http: HttpClient,
+    private authService: AuthServiceService
   ) {
     this.userLogin = this.fb.group({
       userEmail: new FormControl('', [Validators.required, Validators.email]),
@@ -54,7 +56,8 @@ export class LoginComponent implements OnInit {
       (response: any) => {
         console.log('Server response:', response);
 
-        localStorage.setItem('userId', response.userName);
+        // Save user details in AuthService
+        this.authService.login(response.userId, response.userName);
 
         this.router.navigate(['/user-dashboard/home'], {
           queryParams: { userEmail: this.user.userEmail },

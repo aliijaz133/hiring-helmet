@@ -18,4 +18,8 @@ export class SidebarComponent implements OnInit {
   ngOnInit(): void {
     this.userName = this.authService.getLoggedInUserName() || null;
   }
+
+  getLocalUsername() {
+    return this.authService.getLoggedInUserName();
+  }
 }
