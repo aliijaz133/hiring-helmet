@@ -8,6 +8,8 @@ import { OrdersComponent } from './orders/orders.component';
 import { ServiceOrderComponent } from './service-order/service-order.component';
 import { CreateOrderComponent } from './create-order/create-order.component';
 import { UserListComponent } from './user-list/user-list.component';
+import { AuthGuardService } from '../service/auth-guard.service';
+
 
 const routes: Routes = [
   {
@@ -18,34 +20,42 @@ const routes: Routes = [
   {
     path: 'home',
     component: ProfileComponent,
+    canActivate: [AuthGuardService],
   },
   {
     path: 'my-profile',
     component: UserProfileComponent,
+    canActivate: [AuthGuardService],
   },
   {
     path: 'profile-history',
     component: HistoryComponent,
+    canActivate: [AuthGuardService],
   },
   {
     path: 'total-payment',
     component: PaymentComponent,
+    canActivate: [AuthGuardService],
   },
   {
     path: 'orders',
     component: OrdersComponent,
+    canActivate: [AuthGuardService],
   },
   {
     path: 'service-order/find-order',
     component: ServiceOrderComponent,
+    canActivate: [AuthGuardService],
   },
   {
     path: 'create-order',
     component: CreateOrderComponent,
+    canActivate: [AuthGuardService],
   },
   {
     path: 'user-list',
     component: UserListComponent,
+    canActivate: [AuthGuardService],
   },
   {
     path: '**',

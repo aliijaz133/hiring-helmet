@@ -27,6 +27,7 @@ import { ImageGroupComponent } from './image-group/image-group.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { InteriorDesignComponent } from './interior-design/interior-design.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { TokenFormatPipe } from './pipes/token-format.pipe';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     ImageGroupComponent,
     AboutUsComponent,
     InteriorDesignComponent,
+    TokenFormatPipe,
   ],
   imports: [
     BrowserModule,

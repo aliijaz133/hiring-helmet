@@ -19,3 +19,13 @@ app-sidebar {
   height: auto;
   background-color: orange;
 }
+
+ol:nth-child(even) {
+  background-color: aquamarine;
+  padding: 20px;
+}
+
+ol:nth-child(odd) {
+  background-color: aqua;
+  padding: 20px;
+}

@@ -2,11 +2,14 @@
 <div class="main-container">
   <app-sidebar></app-sidebar>
   <main>
-    <ol *ngFor="let user of userList; let index">
-      <li>Name: {{ user.userName }}</li>
-      <li>Email: {{user.userEmail}}</li>
-      <li>User Id: {{user._id}}</li>
-    </ol>
+    <h1 *ngIf="userList">Total User: {{ userList.length }}</h1>
+    <div style="overflow-y: auto; height: 400px">
+      <ol *ngFor="let user of userList; let index">
+        <li>Name: {{ user.userName }}</li>
+        <li>Email: {{ user.userEmail }}</li>
+        <li>User Id: {{ user._id | tokenLength }}</li>
+      </ol>
+    </div>
   </main>
 </div>
 <app-footer></app-footer>

@@ -34,6 +34,7 @@ import { MatRadioModule } from '@angular/material/radio';
 import { LoaderGifComponent } from './loader-gif/loader-gif.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { UserListComponent } from './user-list/user-list.component';
+import { TokenLengthPipe } from './pipes/token-length.pipe';
 @NgModule({
   declarations: [
     UserDashboardComponent,
@@ -57,6 +58,7 @@ import { UserListComponent } from './user-list/user-list.component';
     CreateOrderComponent,
     LoaderGifComponent,
     UserListComponent,
+    TokenLengthPipe,
   ],
   imports: [
     CommonModule,
