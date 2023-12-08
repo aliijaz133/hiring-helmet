@@ -11,7 +11,8 @@ export class UserListComponent implements OnInit {
 
   showLoader = false;
 
-  private url = 'http://localhost:3000/api/user-dashboard/user-list';
+  private url =
+    'http://localhost:3000/api/user-dashboard/user-list/6C62776E524DAA8D33A2CDB28A669';
 
   constructor(private http: HttpClient) {}
 
