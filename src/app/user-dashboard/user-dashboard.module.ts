@@ -33,6 +33,7 @@ import { CreateOrderComponent } from './create-order/create-order.component';
 import { MatRadioModule } from '@angular/material/radio';
 import { LoaderGifComponent } from './loader-gif/loader-gif.component';
 import { MatMenuModule } from '@angular/material/menu';
+import { UserListComponent } from './user-list/user-list.component';
 @NgModule({
   declarations: [
     UserDashboardComponent,
@@ -55,6 +56,7 @@ import { MatMenuModule } from '@angular/material/menu';
     CreatedSuccessfullyComponent,
     CreateOrderComponent,
     LoaderGifComponent,
+    UserListComponent,
   ],
   imports: [
     CommonModule,

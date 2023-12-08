@@ -1,0 +1,12 @@
+<app-header></app-header>
+<div class="main-container">
+  <app-sidebar></app-sidebar>
+  <main>
+    <ol *ngFor="let user of userList; let index">
+      <li>Name: {{ user.userName }}</li>
+      <li>Email: {{user.userEmail}}</li>
+      <li>User Id: {{user._id}}</li>
+    </ol>
+  </main>
+</div>
+<app-footer></app-footer>
